@@ -65,18 +65,14 @@ table, td {
     border: solid black 1px; width: 240px;
     height: 5rem;
     border-collapse: collapse;
+    cursor: pointer;
 }
+
 
 /* .score-area {
 
 
 }
-
-.reset{
-
-
-} */
-
 
 /* Feedback Form Page */
 
@@ -170,7 +166,7 @@ table, td {
     }
 } 
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     .game-zone {
         height: 45vh;
         width: 75%;
@@ -178,7 +174,7 @@ table, td {
     }
 
     .reset-button {
-        width: 250px;
+        width: 25%;
         font-size: 200%;
     }
 
