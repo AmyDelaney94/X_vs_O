@@ -42,9 +42,7 @@ h1 {
 /* Heading */
 
 .heading {
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 3px;
+    
     line-height: 150px;
     color: #ffa500;
 }
@@ -56,22 +54,37 @@ h1 {
 
 /* Game Page */
 
-.game-zone > table {
+.game-zone {
     text-align: center;
     margin: auto;
 }
 
-table, td {
-    border: solid black 1px; width: 240px;
-    height: 5rem;
-    border-collapse: collapse;
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    color: #3c3c3c;
+    width: 240px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    box-shadow: 2px;
+    font-size: 40px;
+    line-height: 80px;
+    border: solid black 1px;
     cursor: pointer;
 }
 
 
-/* .score-area {
-
-
+/* Player choice */
+.score-area, .playerStatus {
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
 }
 
 /* Feedback Form Page */
@@ -148,11 +161,14 @@ table, td {
     .game-zone {
         height: 45vh;
         width: 75%;
-        margin: 10px auto;
+        margin: auto;
     }
 
-    .score-area {
-        padding: 10px 0;
+    .score-area, .playerStatus {
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        letter-spacing: 3px;
     }
 
     .heading > h1 {

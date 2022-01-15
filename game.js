@@ -17,89 +17,52 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 });
 
-//Event listeners for Game screen
-// document.getElementsByTagName("td").forEach(box() => box.addEventListener('click', playAvailable) );
-document.addEventListener("DOMContentLoaded", function(){
-    let box = document.getElementsByTagName("td");
+// Setting variables required for game play
+var gameArea = document.getElementsByClassName('box');
+var player = document.querySelector('radio');
+var displayText = document.getElementsByName('p1');
+var move ; 
+var box; 
 
-	for (let box of boxes) {
-		box.addEventListener("click",function() {
-			if (this.getAttribute(playAvailable) === true) {
-				alert("You made your move!");
-			} else {
-				let boxSelected = this.getAttribute(playAvailable);
-				alert(`${boxSelected} has already been slected`);	
-		 	}
-		})
+
+ /* Add event listener to table */
+ let choice = document.getElementsByClass("box");
+ choice.addEventListener('click', move, false);
+
+
+function playGame() {
+	
+}
+
+
+/**
+ * Change Players
+ */
+ function nextMove() {
+	if (move == 'X') {
+		move = 'O';
+	} else {
+		move = 'X';
 	}
-}) ;
-
-
-/**
- * Status of the game
- */
- const gameStatus = document.querySelector('.playerstatus');
+} 
 
 /**
- * This function will stop the game when it is no longer playable
+ * Computer takes turn
  */
- let gameActive = true; 
 
-document.querySelector('.reset').addEventListener('click', playAgain);
 
-/**
- * Function used to determine what cells in the table have been played
- * This will help determine gameActive and what message should be displayed
- * Either win, loss or tie
+/** 
+ * Check Available remaining Moves by checking against winning combinations.
  */
- let gamePlay = ["","","","","","","","",""]
-
- const winText = () => `Player ${currentPlayer} Wins!!`;
- const drawText = () => `The Game is a draw, try again!`;
- 
-
-/**
- * Function for who takes next turn
- */
-let currentPlayer = "X";
-
-const currentPlayersGo  = () => `Player ${currentPlayer}'s turn to play!`;
-
-// Functions needed for game play!
-
-gameStatus.innerHTML = currentPlayersGo();
-function boxSelected() {
-
-}
-
-function nextTurn() {
-	// if (currentPlayer === "X") {
-	// 	currentPlayer = `Its's ${currentPlayersGo} turn`;
-	// } else {
-	// 	result = `Its's ${currentPlayersGo} turn`;
-	// }
-	// return currentPlayer;
-};
-
-/**
- * When game is over it will go back to default settings.
- */
-function playAgain() {
-	// currentPlayer = "X";
-	// gameActive = true;
-	// gamePlay = ["","","","","","","","",""];
-
-	// gameActive.innerHTML = currentPlayersGo;
-	// document.getElementsByClassName('.box').forEach(box => box.innerHTML = "");
-}
-
-function gameScore() {
-
-}
-
-function playAvailable(playAvailableValid) {
-	const boxChosen = playAvailableValid.target;
-	const 
+ function gameArea() {
+	win(document.getElementById('box1'), document.getElementById('box2'), document.getElementById('box3'));
+	win(document.getElementById('box4'), document.getElementById('box5'), document.getElementById('box6'));
+	win(document.getElementById('box7'), document.getElementById('box8'), document.getElementById('box9'));
+	win(document.getElementById('box1'), document.getElementById('box5'), document.getElementById('box9'));
+	win(document.getElementById('box7'), document.getElementById('box5'), document.getElementById('box3'));
+	win(document.getElementById('box2'), document.getElementById('box5'), document.getElementById('box8'));
+	win(document.getElementById('box1'), document.getElementById('box4'), document.getElementById('box7'));
+	win(document.getElementById('box3'), document.getElementById('box6'), document.getElementById('box9'));
 }
 
 /**

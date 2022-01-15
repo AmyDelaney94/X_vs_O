@@ -23,26 +23,26 @@
     <h1 class="heading">
         <a href="index.html">X's and O's</a>
     </h1>
-    <div class="game-zone">
-        <table class="game-area">
-            <tbody>
-                <tr>
-                    <td id="box1" class="box"></td>
-                    <td id="box2" class="box"></td>
-                    <td id="box3" class="box"></td>
-                </tr>
-                <tr>
-                    <td id="box4" class="box"></td>
-                    <td id="box5" class="box"></td>
-                    <td id="box6" class="box"></td>
-                </tr>
-                <tr>
-                    <td id="box7" class="box"></td>
-                    <td id="box8" class="box"></td>
-                    <td id="box9" class="box"></td>
-                </tr>
-            </tbody>
-        </table>
+    <section class="game-zone">
+        <div class="game-area">
+            <div id="1" class="box"></div>
+            <div id="2" class="box"></div>
+            <div id="3" class="box"></div>
+            <div id="4" class="box"></div>
+            <div id="5" class="box"></div>
+            <div id="6" class="box"></div>
+            <div id="7" class="box"></div>
+            <div id="8" class="box"></div>
+            <div id="9" class="box"></div>
+        </div>   
+    </section>
+    <div class="playerStatus">
+        <!-- Form not submitted, used for player selection -->
+        <form action="#">
+            <p name="p1"> Please Choose your player: </p>
+        <input type="radio" name="choose" id="option1" value="X">X</input>
+        <input type="radio" name="choose" id="option2" value="O">O</input>
+        </form>
     </div>
 
     <div class="score-area">
