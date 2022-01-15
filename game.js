@@ -20,19 +20,37 @@ document.addEventListener("DOMContentLoaded", function(){
 // Setting variables required for game play
 var gameArea = document.getElementsByClassName('box');
 var player = document.querySelector('radio');
-var displayText = document.getElementsByName('p1');
-var move ; 
-var box; 
+var displayText = document.getElementById('p1');
+let celebrationText = () => `${move} has won the game!!`
+let nowinnerText = () => `Sorry we have no winner, please try again.` 
+var move  = player(); 
+var box;  
+let gameOptions = ["","","","","","","","","",]
+let gameOver = false;
 
+ /* Add event listener to game area */
+ function takeTurn () {
+	 if(this.innerHTML == "") {
+		 this.innerHTML = move;
+		 computerTurn(); 
+		 nextMove();
+		 gameWon();
+	 }
+ }
 
- /* Add event listener to table */
- let choice = document.getElementsByClass("box");
- choice.addEventListener('click', move, false);
+ var choice = document.getElementsByClassName('box');
+ choice.addEventListener('click');
 
-
-function playGame() {
-	
+function playGame(boxSelected,boxLocation) {
+	gameOptions[boxLocation] = move;
+	boxSelected.innerHTML = move;
 }
+
+/**
+ * Current players turn status update:
+ */
+let currentPlayer = () => `It is ${move}'s turn next!`
+displayText.innerHTML = currentPlayer();
 
 
 /**
@@ -44,26 +62,96 @@ function playGame() {
 	} else {
 		move = 'X';
 	}
+	displayText.innerHTML = currentPlayer();
 } 
 
 /**
  * Computer takes turn
  */
 
+ function computersTurn() {
+	var emptyBox = [];
+	var random;
+
+for (var i = 0; i < box.length; i++) {
+	if (box[i].textContent == ''){
+		emptyBox.push(box[i]);
+	}
+}
+
+/**
+ * Function for Computer to play available box
+ */
+	random = Math.ceil(Math.random() * emptyBox.length) -1;
+	emptyBox[random].textContent = move;
+	gameArea();
+	nextMove();
+}
 
 /** 
- * Check Available remaining Moves by checking against winning combinations.
+ * Check game status by game-area completion against winning combinations.
  */
- function gameArea() {
-	win(document.getElementById('box1'), document.getElementById('box2'), document.getElementById('box3'));
-	win(document.getElementById('box4'), document.getElementById('box5'), document.getElementById('box6'));
-	win(document.getElementById('box7'), document.getElementById('box8'), document.getElementById('box9'));
-	win(document.getElementById('box1'), document.getElementById('box5'), document.getElementById('box9'));
-	win(document.getElementById('box7'), document.getElementById('box5'), document.getElementById('box3'));
-	win(document.getElementById('box2'), document.getElementById('box5'), document.getElementById('box8'));
-	win(document.getElementById('box1'), document.getElementById('box4'), document.getElementById('box7'));
-	win(document.getElementById('box3'), document.getElementById('box6'), document.getElementById('box9'));
+ let gameWon = [[1,2,3],[4,5,6],[7,8,9],[1,5,9],[2,5,8],[3,5,7],[1,4,7],[3,6,9]];
+document.querySelectorAll('.box').forEach(box => box.addEventListener('click',boxSelected));
+
+/**
+ * 
+ */
+
+function moveTaken(boxChosen) {
+	let boxSelected = boxChosen.target;
+	let boxLocation = parseInt(boxSelected.getElementsByClassName('box'));
+
+	if (gameOptions[boxLocation] !== "" || !gameOver) {
+		return;
+	}
+
+	playGame(boxSelected,boxLocation);
+	gameScore()
 }
+
+function gameScore() {
+	let win = false;
+	for (let i = 0; i <= 8; i++) {
+		var gameWon = gameWon[i];
+		let x = gameOptions[gameWon[0]];
+		let y = gameOptions[gameWon[1]];
+		let z = gameOptions[gameWon[2]];
+
+		// if statement used to determine if game can continue with x,y,z representing a column each in the game
+		if (x === "" || y === "" || z === ""){
+			continue;
+		} 
+		if (x === y && y === z) {
+			win = true;
+			break
+		}
+
+	}
+
+	if (win) {
+		displayText.innerHTML = celebrationText();
+		gameOver = true ; 
+		return;
+	}
+
+	let draw = gameWon !== gameWon[i];
+	if (draw) {
+		displayText.innerHTML = nowinnerText();
+		gameOver = true ;
+		return;
+	}
+
+	nextMove();
+}
+
+/**
+ * Function to restart game
+ */
+// document.querySelectorAll('.box').forEach(box => box.innerHTML ="");
+
+
+
 
 /**
 * Gets the current amount of games won from the DOM and increments it by 1. 

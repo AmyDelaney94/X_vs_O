@@ -25,21 +25,21 @@
     </h1>
     <section class="game-zone">
         <div class="game-area">
-            <div id="1" class="box"></div>
-            <div id="2" class="box"></div>
-            <div id="3" class="box"></div>
-            <div id="4" class="box"></div>
-            <div id="5" class="box"></div>
-            <div id="6" class="box"></div>
-            <div id="7" class="box"></div>
-            <div id="8" class="box"></div>
-            <div id="9" class="box"></div>
+            <div data-cell="b1" class="box"></div>
+            <div data-cell="b2" class="box"></div>
+            <div data-cell="b3" class="box"></div>
+            <div data-cell="b4" class="box"></div>
+            <div data-cell="b5" class="box"></div>
+            <div data-cell="b6" class="box"></div>
+            <div data-cell="b7" class="box"></div>
+            <div data-cell="b8" class="box"></div>
+            <div data-cell="b9" class="box"></div>
         </div>   
     </section>
     <div class="playerStatus">
         <!-- Form not submitted, used for player selection -->
         <form action="#">
-            <p name="p1"> Please Choose your player: </p>
+            <p id="p1"> Please Choose your player: </p>
         <input type="radio" name="choose" id="option1" value="X">X</input>
         <input type="radio" name="choose" id="option2" value="O">O</input>
         </form>
@@ -54,7 +54,7 @@
     </div>
 
     <!-- Link to JavaScript file -->
-    <script src="game.js" type="text/javascript"></script>
+    <script src="activegame.js" type="text/javascript"></script>
 </body>
 
 </html>

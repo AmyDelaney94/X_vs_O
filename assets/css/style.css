@@ -42,8 +42,7 @@ h1 {
 /* Heading */
 
 .heading {
-    
-    line-height: 150px;
+    line-height: 100px;
     color: #ffa500;
 }
 
@@ -77,7 +76,6 @@ h1 {
     border: solid black 1px;
     cursor: pointer;
 }
-
 
 /* Player choice */
 .score-area, .playerStatus {
