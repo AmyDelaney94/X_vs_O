@@ -160,3 +160,16 @@ function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
  };
+
+
+
+
+// //Change Player
+// function nextMove() {
+// 	if (move == 'X') {
+// 		move = 'O';
+// 	} else {
+// 		move = 'X';
+// 	}
+// 	displayText.innerHTML = currentPlayer();
+// } 

@@ -121,15 +121,7 @@ function currentPlayer() {
 
 
 
-// //Change Player
-// function nextMove() {
-// 	if (move == 'X') {
-// 		move = 'O';
-// 	} else {
-// 		move = 'X';
-// 	}
-// 	displayText.innerHTML = currentPlayer();
-// } 
+
 
 //Let CPU make random choice
 function randomPlay(box) {
@@ -150,6 +142,13 @@ function playerMove() {
 
 
 //Score vs CPU
+/**
+* Gets the current amount of games won from the DOM and increments it by 1. 
+*/
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+ };
 
 
 
