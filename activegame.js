@@ -17,6 +17,23 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function(){
+    let symbols = document.getElementsByTagName("input");
+    
+    	for (let symbol of symbols) {
+    	    symbol.addEventListener("click",function() {
+                let player1 = document.querySelectorAll('input[name="choose"]:checked').value;
+    	        if (this.getAttribute("value") === "X") {
+                    player1 = "X"
+    	            alert(`You have chosen to be X!`);
+    	        } else (this.getAttribute("value") === "O");
+    	            alert(`You have chosen to be O!`);
+	            } )    
+        }
+});
+
 // Variables needed in game
 const boxElements = document.querySelectorAll('[data-cell]')
 const playerX = 'X'
@@ -33,14 +50,58 @@ boxElements.forEach(box => {
 });
 let displayText = document.querySelector('p1');
 
-
 //Choose a Player X or O
-let player1 = document.getElementsByName('choose');
-if (player1 === "X") {
-    console.log(displayText = `You have chosen to be X!`);
-} else {
-    console.log(displayText = `You have chosen to be O!`);  
-};
+// let player1 = document.querySelectorAll('input[name="choose"]:checked').value;
+// if (player1 === "X") {
+//     console.log(displayText = `You have chosen to be X!`);
+// } else {
+//     console.log(displayText = `You have chosen to be O!`);  
+// };
+
+
+/**
+ * Function for clicking the box designed to take the Event (e)
+ */
+ function handleClick(e) {
+    const box = e.target
+    const currentPlayer = X_Turn ? playerO : playerX 
+    box.textContent = currentPlayer
+    makeMove(box,currentPlayer)
+
+    nextTurn()
+    console.log(currentPlayer)
+    if (gameWon(currentPlayer)) {
+        gameOver(false)
+    }
+}
+
+
+/**
+ * Function that plays the correct symbol depending on turn.
+ */
+ function makeMove(box, currentPlayer) {
+    box.classList.add(currentPlayer)
+}
+
+/**
+ * Function swaps between X and O each turn. 
+ */
+ function nextTurn() {
+    X_Turn = !X_Turn
+}
+
+/**
+ * Function to check if game has been won
+ * If all indexes are same player then game over
+ */
+function gameWon(currentPlayer) {
+    return winningBoard.some(combination => {
+        return combination.every(index => {
+            return boxElements[index].classList.contains(currentPlayer)
+        })
+    })
+}
+
 
 //Current Player
 function currentPlayer() {
@@ -51,23 +112,23 @@ function currentPlayer() {
 }
 
 //Set CPU to not player.
-    if (player1 === "X") {
-        computer = "O";
-    } else {
-        computer = "X";
-    };
+    // if (player1 === "X") {
+    //     computer = "O";
+    // } else {
+    //     computer = "X";
+    // };
 
 
 
-//Change Player
-function nextMove() {
-	if (move == 'X') {
-		move = 'O';
-	} else {
-		move = 'X';
-	}
-	displayText.innerHTML = currentPlayer();
-} 
+// //Change Player
+// function nextMove() {
+// 	if (move == 'X') {
+// 		move = 'O';
+// 	} else {
+// 		move = 'X';
+// 	}
+// 	displayText.innerHTML = currentPlayer();
+// } 
 
 //Let CPU make random choice
 function randomPlay(box) {
