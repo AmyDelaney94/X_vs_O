@@ -188,7 +188,7 @@ h2 {
     max-width: 500px;
     position: absolute;
     padding: 10%;
-    margin: 75px 10% 0 0;
+    /* margin: 75px 10% 0 0; */
     font-family: 'EB Garamond', serif;
 }
 
