@@ -70,9 +70,10 @@ let displayText = document.querySelector('p1');
 
     nextTurn()
     console.log(currentPlayer)
+
     if (gameWon(currentPlayer)) {
         gameOver(false)
-    }
+    } else (gameOver(true))
 }
 
 
