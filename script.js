@@ -51,32 +51,38 @@ function clickBox() {
 }
 clickBox()
 
-//Choose a Player X or O
-// let player1 = document.querySelectorAll('input[name="choose"]:checked').value;
-// if (player1 === "X") {
-//     console.log(displayText = `You have chosen to be X!`);
-// } else {
-//     console.log(displayText = `You have chosen to be O!`);  
-// };
-
-
 /**
  * Function for clicking the box designed to take the Event (e)
  */
  function handleClick(e) {
+    if (!playerOption) {
+        alert("Please choose a player first!")
+        return
+    }
+
+    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O'
+
     const box = e.target
     const currentPlayer = X_Turn ? playerO : playerX 
     box.textContent = currentPlayer
     makeMove(box,currentPlayer)
 
     nextTurn()
-    console.log(currentPlayer)
 
-    if (gameWon(currentPlayer)) {
-        gameOver(false)
-    } else (gameOver(true))
+    function gameOver() {
+        if (gameWon(currentPlayer)) {
+          
+        } else (gameOver(true))
+    }
+    
 }
 
+function gameOver() {
+    score += 1
+    document.getElementById('score').innerHTML = score
+    resetGame()
+    alert(`Game Over! You Won!`)
+}
 
 /**
  * Function that plays the correct symbol depending on turn.
