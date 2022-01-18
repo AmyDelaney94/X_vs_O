@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 });
 
-
 // Variables needed in game
 const boxElements = document.querySelectorAll('[data-cell]')
 const playerX = 'X'
@@ -97,8 +96,6 @@ function gameOver() {
     })
 }
 
-
-
 /**
  * Function that displays the correct symbol depending on turn.
  */
@@ -117,7 +114,7 @@ function gameOver() {
  * Function to check if game has been won
  * If all indexes are same player then game over
  */
-function gameWon(currentPlayer) {
+function gameWon(currentPlayer, winningBoard) {
     return winningBoard.some(combination => {
         return combination.every(index => {
             return boxElements[index].classList.contains(currentPlayer)
@@ -125,8 +122,9 @@ function gameWon(currentPlayer) {
     })
 }
 
-
-//Current Player
+/**
+ * Current Player dertermined here
+ */
 function currentPlayer() {
     move = this.value;
     displayText.textContent = move + `, Select a square to take your turn.`
@@ -135,15 +133,12 @@ function currentPlayer() {
 }
 
 //Set CPU to not player.
-    // if (player1 === "X") {
-    //     computer = "O";
-    // } else {
-    //     computer = "X";
-    // };
 
-
-
-
+    if (player1 === "X") {
+        computer = "O";
+    } else {
+        computer = "X";
+    };
 
 //Let CPU make random choice
 function randomPlay(box) {
@@ -162,8 +157,6 @@ function playerMove() {
     }
   }
 
-
-//Score vs CPU
 /**
 * Gets the current amount of games won from the DOM and increments it by 1. 
 */
