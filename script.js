@@ -69,11 +69,7 @@ clickBox()
 
     nextTurn()
 
-    function gameOver() {
-        if (gameWon(currentPlayer)) {
-          
-        } else (gameOver(true))
-    }
+    if (gameWon(currentPlayer)) gameOver()
     
 }
 
@@ -85,7 +81,26 @@ function gameOver() {
 }
 
 /**
- * Function that plays the correct symbol depending on turn.
+ * function to reset game once button selected or game over
+ */
+ function resetGame() {
+    console.log('ResetGame')
+    boxElements.forEach(box => {
+        for (const btnSymbol of symbolsOptions) {
+            btnSymbol.checked = false
+        }
+        playerOption = null
+        X_Turn = undefined
+        box.textContent = ''
+        box.classList.remove('X', 'O')
+        displayText.innerHTML = 'Please Choose your player:'
+    })
+}
+
+
+
+/**
+ * Function that displays the correct symbol depending on turn.
  */
  function makeMove(box, currentPlayer) {
     box.classList.add(currentPlayer)
