@@ -32,7 +32,7 @@ const displayText = document.getElementById('p1')
 let playerOption = null
 let score = 0
 
-
+// EventListener for radio button selection
 const symbolsOptions = document.querySelectorAll('input[name="choose"]')
 for (const btnSymbol of symbolsOptions) {
     btnSymbol.addEventListener("click", function(e) {
@@ -43,6 +43,9 @@ for (const btnSymbol of symbolsOptions) {
     })
 }
 
+/**
+ * Function to listen for what box is clicked and only allows each one be played once
+ */
 function clickBox() {
     boxElements.forEach(box => {
         box.addEventListener('click',handleClick, {once: true})
@@ -68,9 +71,14 @@ clickBox()
 
     nextTurn()
 
-    if (gameWon(currentPlayer)) gameOver()
+    computerGo()
+
+    if (gameWon(currentPlayer)){
+        gameOver()
+    } else ('The game is a draw :( ')
     
 }
+
 
 function gameOver() {
     score += 1
@@ -112,7 +120,7 @@ function gameOver() {
 
 /**
  * Function to check if game has been won
- * If all indexes are same player then game over
+ * If all indexes are same player then game over.
  */
 function gameWon(currentPlayer, winningBoard) {
     return winningBoard.some(combination => {
@@ -128,17 +136,18 @@ function gameWon(currentPlayer, winningBoard) {
 function currentPlayer() {
     move = this.value;
     displayText.textContent = move + `, Select a square to take your turn.`
-    player1.classList.add('Lets Go!')
+    X_Turn.classList.add('Lets Go!')
     this.checked = false;
 }
 
 //Set CPU to not player.
-
-    if (player1 === "X") {
+function computerGo() {
+    if (X_Turn === "X") {
         computer = "O";
     } else {
         computer = "X";
     };
+}
 
 //Let CPU make random choice
 function randomPlay(box) {
@@ -153,7 +162,7 @@ function playerMove() {
       this.textContent = move;
       gameWon();
       nextMove();
-      computer();
+      computerGo();
     }
   }
 
