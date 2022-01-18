@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
     	for (let button of buttons) {
     	    button.addEventListener("click",function() {
     	        if (this.getAttribute("data-type") === "submit") {
-    	            alert("You clicked Reset!");
+    	            resetGame()
     	        } else if (this.getAttribute("data-type") === "play") {
     	            alert(`You clicked ${gameType}`);
 	            } else {
@@ -17,22 +17,6 @@ document.addEventListener("DOMContentLoaded", function(){
 	}
 });
 
-
-
-document.addEventListener("DOMContentLoaded", function(){
-    let symbols = document.getElementsByTagName("input");
-    
-    	for (let symbol of symbols) {
-    	    symbol.addEventListener("click",function() {
-                let player1 = document.querySelectorAll('input[name="choose"]:checked').value;
-    	        if (this.getAttribute("value") === "X") {
-                    player1 = "X"
-    	            alert(`You have chosen to be X!`);
-    	        } else (this.getAttribute("value") === "O");
-    	            alert(`You have chosen to be O!`);
-	            } )    
-        }
-});
 
 // Variables needed in game
 const boxElements = document.querySelectorAll('[data-cell]')
@@ -45,10 +29,27 @@ const winningBoard = [
     [0,4,8],[2,4,6]
 ]
 
-boxElements.forEach(box => {
-    box.addEventListener('click',handleClick, {once: true})
-});
-let displayText = document.querySelector('p1');
+const displayText = document.getElementById('p1')
+let playerOption = null
+let score = 0
+
+
+const symbolsOptions = document.querySelectorAll('input[name="choose"]')
+for (const btnSymbol of symbolsOptions) {
+    btnSymbol.addEventListener("click", function(e) {
+        playerOption = e.target.value
+        displayText.innerHTML = `You have chosen to be ${e.target.value}!`
+        
+        clickBox()
+    })
+}
+
+function clickBox() {
+    boxElements.forEach(box => {
+        box.addEventListener('click',handleClick, {once: true})
+    });
+}
+clickBox()
 
 //Choose a Player X or O
 // let player1 = document.querySelectorAll('input[name="choose"]:checked').value;
