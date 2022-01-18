@@ -10,7 +10,8 @@
 /* Home Page */
 
 body {
-    background-color: #00b3b3;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    /* background-color: #00b3b3; */
     font-family: 'EB Garamond', serif;
 }
 
@@ -41,7 +42,7 @@ h2 {
     margin-right: auto;
     font-size: 100%;
     font-weight: bold;
-    background-color: #ffa500;
+    background-color: #ffa500; 
     color: #3c3c3c;
     display: block;
     width: 33%;
@@ -166,14 +167,6 @@ h2 {
     padding: 2rem;
     text-align: center;
     letter-spacing: 3px;
-}
-
-#option1 {
-    color: white;
-}
-
-#option2 {
-    color: black;
 }
 
 /* Feedback Form Page */
