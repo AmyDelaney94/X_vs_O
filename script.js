@@ -67,14 +67,17 @@ clickBox()
     const box = e.target
     const currentPlayer = X_Turn ? playerO : playerX 
     box.textContent = currentPlayer
-    makeMove(box,currentPlayer)
+    makeMove(box, currentPlayer)
 
     nextTurn()
 
     if (gameWon(currentPlayer)) gameOver()
-    
+
 }
 
+/**
+* Gets the current amount of games won from the DOM and increments it by 1. 
+*/
 
 function gameOver() {
     score += 1
@@ -82,6 +85,15 @@ function gameOver() {
     resetGame()
     alert(`Game Over! You Won!`)
 }
+
+
+function notGameOver() {
+    score -= 1
+    document.getElementById('score').innerHTML = score
+    resetGame()
+    alert(`Game Over! You Lose!`)
+}
+
 
 /**
  * function to reset game once button selected or game over
@@ -92,6 +104,7 @@ function gameOver() {
         for (const btnSymbol of symbolsOptions) {
             btnSymbol.checked = false
         }
+
         playerOption = null
         X_Turn = undefined
         box.textContent = ''
@@ -118,7 +131,7 @@ function gameOver() {
  * Function to check if game has been won
  * If all indexes are same player then game over.
  */
-function gameWon(currentPlayer, winningBoard) {
+function gameWon(currentPlayer) {
     return winningBoard.some(combination => {
         return combination.every(index => {
             return boxElements[index].classList.contains(currentPlayer)
@@ -137,7 +150,7 @@ function currentPlayer() {
 }
 
 //Set CPU to not player.
-function computerGo() {
+function computer() {
     if (X_Turn === "X") {
         computer = "O";
     } else {
@@ -147,7 +160,7 @@ function computerGo() {
 
 //Let CPU make random choice
 function randomPlay(box) {
-    let x = Math.floor(Math.random() * box.length -1);
+    let x = Math.floor(Math.ceil() * box.length -1);
     let allBoxes = box[x];
     return (allBoxes);
 }
@@ -161,15 +174,6 @@ function playerMove() {
       computer();
     }
   }
-
-/**
-* Gets the current amount of games won from the DOM and increments it by 1. 
-*/
-function incrementScore() {
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
- };
-
 
 
 //Pop-up for Rules
@@ -210,4 +214,5 @@ function closePopup(button) {
      if (button === "close-rules-btn") {
         document.getElementById("rules").style.display = "none";
     }
-}
+};
+
