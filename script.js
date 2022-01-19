@@ -71,11 +71,7 @@ clickBox()
 
     nextTurn()
 
-    computerGo()
-
-    if (gameWon(currentPlayer)){
-        gameOver()
-    } else ('The game is a draw :( ')
+    if (gameWon(currentPlayer)) gameOver()
     
 }
 
@@ -162,7 +158,7 @@ function playerMove() {
       this.textContent = move;
       gameWon();
       nextMove();
-      computerGo();
+      computer();
     }
   }
 
