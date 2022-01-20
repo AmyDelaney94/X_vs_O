@@ -64,15 +64,50 @@ clickBox()
 
     if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O'
 
-    const box = e.target
-    const currentPlayer = X_Turn ? playerO : playerX 
-    box.textContent = currentPlayer
-    makeMove(box, currentPlayer)
+    let box = e.target;
+    let currentPlayer = X_Turn ? playerO : playerX;
+    box.textContent = currentPlayer;
+    makeMove(box, currentPlayer);
 
-    nextTurn()
+    nextTurn();
 
-    if (gameWon(currentPlayer)) gameOver()
+    if (gameWon(currentPlayer)) {
+        gameOver();
+        return;
+    }
 
+    currentPlayer = X_Turn ? playerO : playerX;
+    while (true) {
+        let boxes = document.getElementsByClassName('box');
+        let cpuSelect = Math.floor(Math.random()*9);
+        if (cpuSelect == 9) {
+            cpuSelect--;
+        }
+        box = boxes[cpuSelect];
+
+        let isIn = false;
+        for (let i=0; i<box.classList.length; i++) {
+            if (currentPlayer == box.classList[i]) {
+                isIn = true;
+            }
+        }
+
+        if (isIn) {
+            console.log('I am here!'); 
+            continue;
+        }
+        box.textContent = currentPlayer;
+        makeMove(box, currentPlayer);
+        break; 
+    }
+    
+
+    nextTurn();
+
+    if (gameWon(currentPlayer)) {
+        gameOver();
+        return;
+    }
 }
 
 /**

@@ -9,6 +9,8 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
 
 ## Table of Contents
 
+*Add that here*
+
 
 
 ## User Experience
