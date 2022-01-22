@@ -6,41 +6,41 @@ document.addEventListener("DOMContentLoaded", function(){
     	for (let button of buttons) {
     	    button.addEventListener("click",function() {
     	        if (this.getAttribute("data-type") === "submit") {
-    	            resetGame()
+    	            resetGame() ;
     	        } else if (this.getAttribute("data-type") === "play") {
     	            alert(`You clicked ${gameType}`);
 	            } else {
 	                let gameType = this.getAttribute("data-type");
 	                alert(`You clicked ${gameType}`);	
 	         }
-        })
+        });
 	}
 });
 
 // Variables needed in game
-const boxElements = document.querySelectorAll('[data-cell]')
-const playerX = 'X'
-const playerO = 'O'
-let X_Turn
+const boxElements = document.querySelectorAll('[data-cell]') ;
+const playerX = 'X' ;
+const playerO = 'O' ;
+let X_Turn ;
 const winningBoard = [
     [0,1,2],[3,4,5],[6,7,8],
     [0,3,6],[1,4,7],[2,5,8],
     [0,4,8],[2,4,6]
-]
+] ;
 
-const displayText = document.getElementById('p1')
-let playerOption = null
-let score = 0
+const displayText = document.getElementById('p1') ;
+let playerOption = null ;
+let score = 0 ;
 
 // EventListener for radio button selection
-const symbolsOptions = document.querySelectorAll('input[name="choose"]')
+const symbolsOptions = document.querySelectorAll('input[name="choose"]') ;
 for (const btnSymbol of symbolsOptions) {
     btnSymbol.addEventListener("click", function(e) {
-        playerOption = e.target.value
-        displayText.innerHTML = `You have chosen to be ${e.target.value}!`
+        playerOption = e.target.value ;
+        displayText.innerHTML = `You have chosen to be ${e.target.value}!` ;
         
-        clickBox()
-    })
+        clickBox() ;
+    });
 }
 
 /**
@@ -48,21 +48,21 @@ for (const btnSymbol of symbolsOptions) {
  */
 function clickBox() {
     boxElements.forEach(box => {
-        box.addEventListener('click',handleClick, {once: true})
+        box.addEventListener('click',handleClick, {once: true}) ;
     });
 }
-clickBox()
+clickBox();
 
 /**
  * Function for clicking the box designed to take the Event (e)
  */
  function handleClick(e) {
     if (!playerOption) {
-        alert("Please choose a player first!")
-        return
+        alert("Please choose a player first!") ;
+        return ;
     }
 
-    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O'
+    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O' ;
 
     let box = e.target;
     let currentPlayer = X_Turn ? playerO : playerX;
@@ -115,51 +115,51 @@ clickBox()
 */
 
 function gameOver() {
-    score += 1
-    document.getElementById('score').innerHTML = score
-    resetGame()
-    alert(`Game Over! You Won!`)
+    score += 1 ;
+    document.getElementById('score').innerHTML = score ;
+    resetGame() ;
+    alert(`Game Over! You Won!`) ;
 }
 
 
 function notGameOver() {
-    score -= 1
-    document.getElementById('score').innerHTML = score
-    resetGame()
-    alert(`Game Over! You Lose!`)
-}
+    score -= 1 ;
+    document.getElementById('score').innerHTML = score ;
+    resetGame() ;
+    alert(`Game Over! You Lose!`) ;
+} 
 
 
 /**
  * function to reset game once button selected or game over
  */
  function resetGame() {
-    console.log('ResetGame')
+    console.log('ResetGame') ; 
     boxElements.forEach(box => {
         for (const btnSymbol of symbolsOptions) {
-            btnSymbol.checked = false
+            btnSymbol.checked = false ;
         }
 
-        playerOption = null
-        X_Turn = undefined
-        box.textContent = ''
-        box.classList.remove('X', 'O')
-        displayText.innerHTML = 'Please Choose your player:'
-    })
+        playerOption = null ;
+        X_Turn = undefined ;
+        box.textContent = '' ;
+        box.classList.remove('X', 'O') ;
+        displayText.innerHTML = 'Please Choose your player:' ;
+    });
 }
 
 /**
  * Function that displays the correct symbol depending on turn.
  */
  function makeMove(box, currentPlayer) {
-    box.classList.add(currentPlayer)
+    box.classList.add(currentPlayer);
 }
 
 /**
  * Function swaps between X and O each turn. 
  */
  function nextTurn() {
-    X_Turn = !X_Turn
+    X_Turn = !X_Turn;
 }
 
 /**
@@ -169,9 +169,9 @@ function notGameOver() {
 function gameWon(currentPlayer) {
     return winningBoard.some(combination => {
         return combination.every(index => {
-            return boxElements[index].classList.contains(currentPlayer)
-        })
-    })
+            return boxElements[index].classList.contains(currentPlayer) ;
+        });
+    });
 }
 
 /**
@@ -179,8 +179,8 @@ function gameWon(currentPlayer) {
  */
 function currentPlayer() {
     move = this.value;
-    displayText.textContent = move + `, Select a square to take your turn.`
-    X_Turn.classList.add('Lets Go!')
+    displayText.textContent = move + `, Select a square to take your turn.` ;
+    X_Turn.classList.add('Lets Go!') ;
     this.checked = false;
 }
 
@@ -190,7 +190,7 @@ function computer() {
         computer = "O";
     } else {
         computer = "X";
-    };
+    }
 }
 
 //Let CPU make random choice
@@ -249,5 +249,5 @@ function closePopup(button) {
      if (button === "close-rules-btn") {
         document.getElementById("rules").style.display = "none";
     }
-};
+}
 
