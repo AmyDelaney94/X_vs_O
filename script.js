@@ -182,25 +182,6 @@ function gameWon(currentPlayer) {
     });
 }
 
-/**
- * Current Player dertermined here
- */
-// function currentPlayer() {
-//     move = this.value;
-//     displayText.textContent = move + `, Select a square to take your turn.` ;
-//     X_Turn.classList.add('Lets Go!') ;
-//     this.checked = false;
-// }
-
-//Set CPU to not player.
-function computer() {
-    if (X_Turn === "X") {
-        computer = "O";
-    } else {
-        computer = "X";
-    }
-}
-
 //Event listener to Game-area
 function playerMove() {
     if (this.textContent == '') {
