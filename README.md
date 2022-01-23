@@ -70,6 +70,9 @@ The main font used in the body of this site is EB Garamond with a back up font o
 <!-- TOC --><a name="wireframes"></a>
 ### Wireframes
 <a href="https://balsamiq.com/">Balsamiq</a> was used to design the wireframes used to design the layout of the website and the location of the sites elements and functions.  
+<img src="assets/screenshots/DesktopLayoutHome.png" alt="Desktop Wireframe">
+<img src="assets/screenshots/GamePage.png" alt="Mobile wireframe of game area">
+<img src="assets/screenshots/MobileLayout.png" alt="Mobile wireframe of home and feedback pages">
 
 
 <!-- TOC --><a name="features"></a>
