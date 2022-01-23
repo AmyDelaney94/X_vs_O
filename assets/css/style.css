@@ -172,8 +172,13 @@ h2 {
 }
 
 .feedback-form {
+    border: solid #f3c74e 2px;
+    height: 360px;
+}
+
+.feedback-form {
     color: #3c3c3c;
-    max-width: 500px;
+    max-width: 350px;
     font-weight: 700;
     position: absolute;
     padding: 10%;
@@ -182,7 +187,6 @@ h2 {
 
 .feedback-form h3 {
     color: #f3c74e;
-    ;
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 175%;
