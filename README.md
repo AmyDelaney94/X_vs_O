@@ -13,8 +13,6 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
 ## Table of Contents
 
 <!-- TOC start -->
-- [X's vs O's](#xs-vs-os)
-  * [Table of Contents](#table-of-contents)
   * [User Experience](#user-experience)
     + [Project Goals](#project-goals)
     + [User Stories](#user-stories)
@@ -54,12 +52,16 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
 
 <!-- TOC --><a name="user-stories"></a>
 ### User Stories
-
+- As a player, I want the website to be easy to navigate between pages.
+- As a player, I want the rules to be easily accessable. 
+- As a player, I want the game to be user friendly.
+- As a player, I want the game to work on multiple devices.
+- As a player, I want the game to be fun and engaging. 
 
 <!-- TOC --><a name="colour-scheme"></a>
 ### Colour Scheme
 *Add image of colours used here*
-The colours used in this project are xyz
+The colours used in this project compliment eachother. The sites background is a blue linear gradient from #00D2FF to #3A47D5. The game heading and main buttons are a coral colour of #FF7F50, this colour is also used in the border of the forms text boxes. The container for the rules pop-up and heading of the form are a yellow, #F3C74E. The close button of the rules pop-up is a pale blue, #89CFF0. The text used in buttons and form is a grey, #3C3C3C.    
 
 <!-- TOC --><a name="typography"></a>
 ### Typography
@@ -102,25 +104,35 @@ The main font used in the body of this site is EB Garamond with a back up font o
 ## Technology Used 
 <!-- TOC --><a name="languages-used"></a>
 ### Languages Used
-- <a href="">HTML5</a>
-- <a href="">CSS3</a>
-- <a href="">JavaScript</a>
+- <a href="https://en.wikipedia.org/wiki/HTML5">HTML5</a>
+- <a href="https://en.wikipedia.org/wiki/CSS">CSS3</a>
+- <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
 
 <!-- TOC --><a name="other-technologies-used"></a>
 ### Other Technologies Used
 - <a href="https://fonts.google.com/">Google Fonts</a> 
-    - - used to add fonts to the site  
+    - Google Fonts was used to import the fonts of EB Garamond and Cairo to the style.css file. These fonts were used throughout the website. 
 - <a href="https://fontawesome.com/v5.15">Font Awesome</a>
-    - used as a source for the icons used on this site 
-- <a href="">GitPod</a>
-- <a href="">GitHub</a>
+    - Font Awesome was used to add icons in order to create a better visual experience for UX purposes. 
+- <a href="https://gitpod.io/">GitPod</a> 
+    - GitPod was used for writing code, committing, and then pushing to GitHub.
+- <a href="https://github.com/">GitHub</a>
+    - GitHub was used to store the project after pushing.
 - <a href="https://balsamiq.com/">Balsamiq</a>
-- <a href="">Am I Responsive?</a>
-- <a href="">Responsive Design Checker</a>
-- <a href="">Chrome DevTools</a>
-- <a href="">W3C CSS Validator</a>
-- <a href="">w3C MarkUp Validator</a>
-- <a href="">JSHint</a>
+    - Balsamiq was used to create the mobile and desktop wireframes during the design phase of the project.
+- <a href="http://ami.responsivedesign.is/">Am I Responsive?</a>
+    - Am I Responsive was used in order to see responsive design throughout the process.
+- <a href="https://responsivedesignchecker.com/">Responsive Design Checker</a>
+    - Responsive Design Checker was used in the testing process to check responsiveness on various devices.
+- <a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a>
+    - Chrome DevTools was used during development process for code review and to test responsiveness.
+- <a href="https://validator.w3.org/">W3C MarkUp Validator</a>
+    - W3C Markup Validator was used to validate the HTML code.
+- <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validator</a>
+    - W3C CSS Validator was used to validate the CSS code.
+- <a href="https://jshint.com/">JSHint</a>
+    - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
+
 
 <!-- TOC --><a name="testing"></a>
 ## Testing
