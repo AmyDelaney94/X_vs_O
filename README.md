@@ -87,12 +87,25 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 
 <!-- TOC --><a name="header"></a>
 #### Header
-- <img src="assets/screenshots/Heading.PNG" alt="Screenshot of Site heading">
+<img src="assets/screenshots/Heading.PNG" alt="Screenshot of Site heading">
 - The heading contaings the site name and is present on every game page.
 
 <!-- TOC --><a name="home-page"></a>
 ### Home Page
-- <img src="assets/screenshots/HomePage.PNG" alt="Screenshot of home page">
+<img src="assets/screenshots/HomePage.PNG" alt="Screenshot of home page">
+
+#### Main Buttons
+<img src="assets/screenshots/buttons.PNG" alt="Screenshot of Site heading">
+- The buttons on the home page direct the player to the game area, a rules pop-up, or a feedback form page. 
+    - The Play button brings players to the Game Page.
+    - The Rules button activates a pop-up showing the rules and site controls.
+    - The Feedback button brings players to an accessible form to be able to submit their feedback.
+
+#### Rules Pop-Up
+<img src="assets/screenshots/Rulessection.PNG" alt="Screenshot of Rules pop-up function">
+<img src="assets/screenshots/RulesPopedUp.PNG" alt="Screenshot of Rules pop-up function as seen on live site">
+
+
 <!-- TOC --><a name="game-area"></a>
 ### Game Area
 <!-- TOC --><a name="player-choice"></a>
@@ -102,11 +115,9 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 <!-- TOC --><a name="reset-button"></a>
 ##### Reset Button
 
-<!-- TOC --><a name="rules"></a>
-### Rules 
-
 <!-- TOC --><a name="feedback-form"></a>
 ### Feedback Form
+
 
 <!-- TOC --><a name="technology-used"></a>
 ## Technology Used 
