@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="game, tictactoe, interactive, best of 3, dublin, ireland">
+    <meta name="keywords" content="game, tictactoe, interactive, you vs CPU, dublin, ireland">
 
     <!-- Add Google Font and Font Awesome links here!! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,7 @@
 </head>
 
 <!-- Body section of the HTML -->
+
 <body>
     <h1 class="heading">
         <a href="index.html">X's and O's</a>
@@ -25,24 +26,24 @@
 
     <!-- Feedback form that users can submit -->
     <section class="form">
-        <form action="https://formdump.codeinstitute.net/" method="POST" class="feedback-form" >
+        <form action="https://formdump.codeinstitute.net/" method="POST" class="feedback-form">
             <h3> Please send on any feedback <i class="far fa-smile-beam"></i></h3>
             <label for="name">Name</label>
-            <input name="name" type="text" class="text" required>
+            <input name="name" id="name" type="text" class="text" required>
 
             <label for="email">Email</label>
-            <input name="email" type="email" class="text" required>
+            <input name="email" id="email" type="email" class="text" required>
 
             <label for="subject">Subject</label>
-            <input name="subject" type="text" class="text" required>
+            <input name="subject" id="subject" type="text" class="text" required>
 
             <label for="message">Message</label>
-            <input name="message" type="text" class="text" required>
+            <input name="message" id="message" type="text" class="text" required>
 
             <input type="submit" value="Send Message" class="send-button">
         </form>
-</section>
-    
+    </section>
+
     <!-- Link to JavaScript file -->
     <script src="script.js"></script>
 
