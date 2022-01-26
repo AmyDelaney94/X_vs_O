@@ -72,7 +72,7 @@ function handleClick(e) {
 
     nextTurn();
 
-    if (gameWon(currentPlayer)) {
+    if (gameWon(playerOption)) {
         gameOver();
         return;
     }

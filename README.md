@@ -140,7 +140,28 @@ The main font used in the body of this site is EB Garamond with a back up font o
 <!-- TOC --><a name="testing"></a>
 ## Testing
 
+### User Testing
 
+### Manual Testing 
+* Browser Compatability
+
+Browser | Outcome | Pass/Fail  
+---|---|---
+Google Chrome | No appearance, responsiveness nor functionality issues.| Pass
+Safari | No appearance, responsiveness nor functionality issues. | Pass
+Mozilla Firefox | No responsiveness nor functionality issues.| Pass
+Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
+
+* Device compatibility
+
+Device | Outcome | Pass/Fail
+--- | --- | ---
+Laptop| No appearance, responsiveness nor functionality issues. | Pass
+Mac | No appearance, responsiveness nor functionality issues. | Pass
+iPad | No appearance, responsiveness nor functionality issues. | Pass
+iPad | No appearance, responsiveness nor functionality issues. | Pass
+iPhone XR | No appearance, responsiveness nor functionality issues. | Pass
+iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 
 <!-- TOC --><a name="references"></a>
