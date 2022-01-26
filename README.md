@@ -114,16 +114,24 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 ##### Player Choice
 <img src="assets/screenshots/choice.PNG" alt="Image of radio buttons for player choice">
 - Allows the player to chose X or O.
+
 <!-- TOC --><a name="score"></a>
 ##### Score
 <img src="assets/screenshots/Score.PNG" alt="Image of Score Counter">
 - Counts number of games Won against the computer.
+
 <!-- TOC --><a name="reset-button"></a>
 ##### Reset Button
 <img src="assets/screenshots/Reset.PNG" alt="Image of Reset Button">
 - Allows user to reset the game. 
+
 <!-- TOC --><a name="feedback-form"></a>
 ### Feedback Form
+<img src="assets/screenshots/Formonmobile.PNG" alt="Screen grab of the form on a mobile device.">
+<img src="assets/screenshots/formsubmission.PNG" alt="Screen grab of the form submission button.">
+- The feedback form was added to allow users to submit feedback on the site.
+- The form also promts users to fill in any blanks before submission.
+<img src="assets/screenshots/promptforinfo.PNG" alt="Screenshot of the form promts.">
 
 
 <!-- TOC --><a name="technology-used"></a>
