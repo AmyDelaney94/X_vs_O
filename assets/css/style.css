@@ -15,7 +15,7 @@ h1 {
     padding: 1rem;
     text-align: center;
     font-family: 'Cairo', sans-serif;
-    font-size: 300%;
+    font-size: 450%;
 }
 
 h2 {
@@ -30,7 +30,7 @@ h2 {
 #open-rules-btn,
 #feedback-button,
 #reset-button {
-    border-radius: 2px;
+    border-radius: 15px;
     padding: 15px;
     text-align: center;
     margin-top: 20px;
@@ -42,7 +42,6 @@ h2 {
     color: #3c3c3c;
     display: block;
     width: 33%;
-    font-family: 'EB Garamond', serif;
     cursor: pointer;
 }
 
@@ -66,12 +65,13 @@ h2 {
 .rule-container {
     padding: 10px;
     color: #3c3c3c;
-    background-color: #f3c74e;
+    background-color: #ffd166;
     font-weight: 700;
-    border-radius: 10px;
-    width: 33%;
+    border-radius: 25px;
     display: block;
     margin-top: 5px;
+    height: auto;
+    width: 33%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -95,14 +95,14 @@ h2 {
 .rule-container button {
     padding: 10px;
     margin: 20px auto;
-    border-radius: 2px;
+    border-radius: 15px;
     text-align: center;
     font-size: 100%;
     font-weight: 700;
-    background-color: #89CFF0;
+    background-color: #e6adec;
     color: #3c3c3c;
     display: block;
-    width: 20%;
+    width: 35%;
     font-family: 'EB Garamond', serif;
     cursor: pointer;
 }
@@ -159,9 +159,13 @@ h2 {
 .score-area,
 .playerStatus {
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     letter-spacing: 3px;
+}
+
+#reset-button {
+    margin-top: 0.5rem;
 }
 
 /* Feedback Form Page */
@@ -172,21 +176,19 @@ h2 {
 }
 
 .feedback-form {
-    border: solid #f3c74e 2px;
-    height: 360px;
-}
-
-.feedback-form {
     color: #3c3c3c;
     max-width: 350px;
     font-weight: 700;
     position: absolute;
     padding: 10%;
     font-family: 'EB Garamond', serif;
+    border: solid #ffd166 4px;
+    border-radius: 25px;
+    height: auto;
 }
 
 .feedback-form h3 {
-    color: #f3c74e;
+    color: #ffd166;
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 175%;
@@ -205,7 +207,7 @@ h2 {
 
 .send-button {
     margin-top: 20px;
-    border-radius: 2px;
+    border-radius: 15px;
     padding: 15px 32px;
     text-align: center;
     font-weight: 700;
@@ -218,7 +220,7 @@ h2 {
 }
 
 /* Media Queries */
-@media (min-width: 414px) {
+@media (max-width: 414px) {
     .game-zone {
         width: 100%;
         margin: auto;
@@ -235,8 +237,8 @@ h2 {
         padding: 5px;
     }
 
-    .heading>h1 {
-        font-size: 2rem;
+    .heading {
+        font-size: 350%;
         text-align: center;
     }
 
@@ -260,10 +262,11 @@ h2 {
         letter-spacing: 3px;
     }
 
-    .heading>h1 {
-        font-size: 1rem;
+    .heading {
+        font-size: 300%;
         text-align: center;
         font-weight: bold;
+
     }
 
     .feedback-form {
