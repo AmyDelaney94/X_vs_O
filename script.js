@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
                 resetGame();
-            } else if (this.getAttribute("data-type") === "play") {
-                alert(`You clicked ${gameType}`);
-            } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
             }
         });
     }
@@ -48,7 +43,7 @@ for (const btnSymbol of symbolsOptions) {
 }
 
 /**
- * Function to listen for what box is clicked and only allows each one be played once
+ * Function to listen for what box is clicked and only allows each one be played once!
  */
 function clickBox() {
     boxElements.forEach(box => {
@@ -99,14 +94,12 @@ function handleClick(e) {
         }
 
         if (isIn) {
-            console.log('I am here!');
             continue;
         }
         box.textContent = currentPlayer;
         makeMove(box, currentPlayer);
         break;
     }
-
 
     nextTurn();
 
@@ -181,18 +174,6 @@ function gameWon(currentPlayer) {
         });
     });
 }
-
-//Event listener to Game-area
-function playerMove() {
-    if (this.textContent == '') {
-        this.textContent = move;
-        gameWon();
-        nextMove();
-        computer();
-        notGameOver();
-    }
-}
-
 
 //Pop-up for Rules
 let openPopupButtons = document.getElementsByClassName("open-popup-btn");
