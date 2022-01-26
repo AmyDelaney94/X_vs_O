@@ -131,7 +131,7 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 <img src="assets/screenshots/formsubmission.PNG" alt="Screen grab of the form submission button.">
 - The feedback form was added to allow users to submit feedback on the site.
 - The form also promts users to fill in any blanks before submission.
-<img src="assets/screenshots/promptforinfo.PNG" alt="Screenshot of the form promts.">
+<img src="assets/screenshots/promtforinfo.PNG" alt="Screenshot of the form promts.">
 
 
 <!-- TOC --><a name="technology-used"></a>
