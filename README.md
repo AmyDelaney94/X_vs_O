@@ -104,17 +104,24 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 #### Rules Pop-Up
 <img src="assets/screenshots/Rulessection.PNG" alt="Screenshot of Rules pop-up function">
 <img src="assets/screenshots/RulesPopedUp.PNG" alt="Screenshot of Rules pop-up function as seen on live site">
-
+- The Rules pop-up explains the rules of the game to the player and has a visible close button. Alternatively the players can choose the play button directly to go from Rules to Game Play. 
 
 <!-- TOC --><a name="game-area"></a>
 ### Game Area
+<img src="assets/screenshots/gamePage.PNG" alt="Image of the game screen">
+
 <!-- TOC --><a name="player-choice"></a>
 ##### Player Choice
+<img src="assets/screenshots/choice.PNG" alt="Image of radio buttons for player choice">
+- Allows the player to chose X or O.
 <!-- TOC --><a name="score"></a>
 ##### Score
+<img src="assets/screenshots/Score.PNG" alt="Image of Score Counter">
+- Counts number of games Won against the computer.
 <!-- TOC --><a name="reset-button"></a>
 ##### Reset Button
-
+<img src="assets/screenshots/Reset.PNG" alt="Image of Reset Button">
+- Allows user to reset the game. 
 <!-- TOC --><a name="feedback-form"></a>
 ### Feedback Form
 
