@@ -197,16 +197,18 @@ iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 
 ### Code Validation
+#### CSS
 - <a href="https://jigsaw.w3.org/css-validator">W3C CSS Validator</a> found no errors or warnings on my CSS.
-<img src="assets/images/CSSvalidation.PNG" alt="Screenshot of CSS validation results">
+<img src="assets/images/CSSvalidation.jpg" alt="Screenshot of CSS validation results">
 
-
+#### HTML
 - There were no errors found when passing code through the <a href="https://validator.w3.org/nu/">Html Validator</a> on any of the pages.
----|---|---
-<img src="assets/images/indexscore.PNG" alt="Screenshot of HTML validation results for the Home screen">|
-<img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the feedback form">|
+
+<img src="assets/images/indexscore.PNG" alt="Screenshot of HTML validation results for the Home screen"> 
+<img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the feedback form"> 
 <img src="assets/images/playhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the Game screen">
 
+#### JavaScript
 
 ### Lighthouse Reports
     - index.html
