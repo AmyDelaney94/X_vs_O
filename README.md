@@ -38,7 +38,7 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
     + [Acknowledgements](#acknowledgements)
 <!-- TOC end -->
 
-
+***
 
 <!-- TOC --><a name="user-experience"></a>
 ## User Experience
@@ -83,14 +83,16 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 <!-- TOC --><a name="general"></a>
 ### General 
 - The website was designed mobile first. 
-- The website is responsive across all devices. 
+- The website has been designed to be responsive across all devices. 
 
 <!-- TOC --><a name="header"></a>
 #### Header
+- <img src="assets/screenshots/Heading.PNG" alt="Screenshot of Site heading">
+- The heading contaings the site name and is present on every game page.
 
 <!-- TOC --><a name="home-page"></a>
 ### Home Page
-
+- <img src="assets/screenshots/HomePage.PNG" alt="Screenshot of home page">
 <!-- TOC --><a name="game-area"></a>
 ### Game Area
 <!-- TOC --><a name="player-choice"></a>
