@@ -202,8 +202,9 @@ iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 
 - There were no errors found when passing code through the <a href="https://validator.w3.org/nu/">Html Validator</a> on any of the pages.
-<img src="assets/images/indexscore.PNG" alt="Screenshot of HTML validation results for the Home screen">
-<img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the feedback form">
+---|---|
+<img src="assets/images/indexscore.PNG" alt="Screenshot of HTML validation results for the Home screen">|
+<img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the feedback form">|
 <img src="assets/images/playhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the Game screen">
 
 
