@@ -2,7 +2,7 @@
 <!-- TOC --><a name="xs-vs-os"></a>
 # X's vs O's
 
-<img src="assets/screenshots/amIresponsive.jpg" alt="Image of Am I responsive site with various pages open">
+<img src="assets/images/amIresponsive.jpg" alt="Image of Am I responsive site with various pages open">
 
 X's and O's is a 3*3 two player game. This website has been created to allow a player to play against the computer. The website is easy to navigate through buttons that lead to a game area, rules section, and feedback form.
 
@@ -171,7 +171,8 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 <!-- TOC --><a name="testing"></a>
 ## Testing
 
-### User Testing
+### User Stories Testing
+
 
 ### Manual Testing 
 * Browser Compatability
@@ -183,7 +184,7 @@ Safari | No appearance, responsiveness nor functionality issues. | Pass
 Mozilla Firefox | No responsiveness nor functionality issues.| Pass
 Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
 
-* Device compatibility(responsiveness)
+* Device compatibility (responsiveness)
 
 Device | Outcome | Pass/Fail
 --- | --- | ---
@@ -194,6 +195,22 @@ iPad | No appearance, responsiveness nor functionality issues. | Pass
 iPhone XR | No appearance, responsiveness nor functionality issues. | Pass
 iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
+
+### Code Validation
+- <a href="https://jigsaw.w3.org/css-validator">W3C CSS Validator</a> found no errors or warnings on my CSS.
+<img src="assets/images/CSSvalidation.PNG" alt="Screenshot of CSS validation results">
+
+
+- There were no errors found when passing code through the <a href="https://validator.w3.org/nu/">Html Validator</a> on any of the pages.
+<img src="assets/images/indexscore.PNG" alt="Screenshot of HTML validation results for the Home screen">
+<img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the feedback form">
+<img src="assets/images/playhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the Game screen">
+
+
+### Lighthouse Reports
+    - index.html
+    - play.html
+    - feedback.html
 
 <!-- TOC --><a name="references"></a>
 ## References: 
