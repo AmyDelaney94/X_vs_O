@@ -162,7 +162,12 @@ h2 {
     padding: 1rem;
     text-align: center;
     letter-spacing: 3px;
+    font-size: 1.3rem;
 }
+
+/* .scores {
+    font-size: 1.5rem;
+} */
 
 #reset-button {
     margin-top: 0.5rem;

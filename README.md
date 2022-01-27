@@ -197,18 +197,18 @@ iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 
 ### Code Validation
-#### CSS
-- <a href="https://jigsaw.w3.org/css-validator">W3C CSS Validator</a> found no errors or warnings on my CSS.
-<img src="assets/images/CSSvalidation.jpg" alt="Screenshot of CSS validation results">
 
-#### HTML
+- <a href="https://jigsaw.w3.org/css-validator">W3C CSS Validator</a> found no errors or warnings on my CSS.
+
 - There were no errors found when passing code through the <a href="https://validator.w3.org/nu/">Html Validator</a> on any of the pages.
 
-<img src="assets/images/indexscore.PNG" alt="Screenshot of HTML validation results for the Home screen"> 
-<img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the feedback form"> 
-<img src="assets/images/playhtmlvalidatorscore.PNG" alt="Screenshot of HTML validation results for the Game screen">
-
-#### JavaScript
+Code | Page | Score  
+--- | --- | --- 
+CSS | Site Wide | <img src="assets/images/CSSvalidation.jpg" alt="Screenshot of CSS validation results">
+HTML | Home Page | <img src="assets/images/indexscore.PNG" alt="HTML validation results for the Home screen"> 
+HTML | Feedback Form| <img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt=" HTML validation results for the feedback form"> 
+HTML | Game Page | <img src="assets/images/playhtmlvalidatorscore.PNG" alt="HTML validation results for the Game screen">
+JavaScript| Site Wide | **ADD IMAGE HERE** 
 
 ### Lighthouse Reports
     - index.html
@@ -225,6 +225,8 @@ iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 - https://www.w3schools.com/default.asp
     - used for help with css, JS and HTML
+
+- stack overflow 
 
 <!-- TOC --><a name="acknowledgements"></a>
 ### Acknowledgements
