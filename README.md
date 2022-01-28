@@ -61,7 +61,7 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
 <!-- TOC --><a name="colour-scheme"></a>
 ### Colour Scheme
 <img src="assets/screenshots/XvsOcolourscheme.png" alt="Image of colour pallete used">
-The colours used in this project compliment eachother and were chosen using the website <a href="https://coolors.co/">Coolors</a>. The sites background is a blue linear gradient from #00D2FF to #3A47D5. The game heading and main buttons are a coral colour of #FF7F50, this colour is also used in the border of the forms text boxes. The container for the rules pop-up and heading of the form are a yellow, #FFD166. The close button of the rules pop-up is a pale lilac, #E6ADEC. The text used in buttons and form is a grey, #3C3C3C.    
+The colours used in this project compliment eachother and were chosen using the website <a href="https://coolors.co/">Coolors</a>. The sites background is a blue linear gradient from #00D2FF to #3A47D5 which was sourced from <a href="https://cssgradient.io/blog/linear-gradient-css/">CSS Gradient</a>. The game heading and main buttons are a coral colour of #FF7F50, this colour is also used in the border of the forms text boxes. The container for the rules pop-up and heading of the form are a yellow, #FFD166. The close button of the rules pop-up is a pale lilac, #E6ADEC. The text used in buttons and form is a grey, #3C3C3C.    
 
 <!-- TOC --><a name="typography"></a>
 ### Typography
