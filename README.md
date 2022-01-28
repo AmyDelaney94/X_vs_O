@@ -220,11 +220,9 @@ JavaScript| Site Wide | **ADD IMAGE HERE**
 
 <!-- TOC --><a name="code"></a>
 #### Code
-- https://animate.style/ 
-    - used for css style on H1 element 
+- <a href="https://animate.style/">Animate.css</a> was used for css the style seen on the H1 element throughout the site. 
 
-- https://www.w3schools.com/default.asp
-    - used for help with css, JS and HTML
+- <a href="https://www.w3schools.com/default.asp">W3Schools</a> was used as a resource for the creation of my css, JavaScript, and HTML.
 
 - <a href="https://stackoverflow.com/">Stack Overflow</a>
 

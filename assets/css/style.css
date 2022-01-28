@@ -47,12 +47,14 @@ h2 {
 
 /* Heading */
 
-.heading {
+#heading {
     line-height: 100px;
     color: #FF7F50;
 }
 
-.heading a {
+
+
+#heading a {
     text-decoration: none;
     color: inherit;
 }
