@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="game, tictactoe, interactive, best of 3, dublin, ireland">
 
-     <!-- Add External Styling links here!! -->
+    <!-- Add External Styling links here!! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo&family=EB+Garamond&display=swap" rel="stylesheet">
@@ -22,14 +22,16 @@
 
     <h1 id="heading" class="animate__animated animate__fadeInDownBig">X's and O's</h1>
 
+
     <!-- Button to bring user to game screen, a rules pop up and feedback screen-->
     <section>
-        <button id="my-button" class="active" data-type="Play" onclick="window.location.href='play.html'">Press To
-            Play!</button>
+        <button id="my-button" class="active" data-type="Play" onclick="window.location.href='play.html'"> Play <i
+                class="far fa-play-circle"></i></button>
         <button id="open-rules-btn" class=" btn open-popup-btn" data-type="Rules">Rules!</button>
         <button id="feedback-button" class="active" data-type="Feedback"
-            onclick="window.location.href='feedback.html'">Leave Feedback!</button>
+            onclick="window.location.href='feedback.html'">Feedback!</button>
     </section>
+
 
     <div class="rules-popup" id="rules">
         <div class="rule-container">
@@ -48,6 +50,10 @@
 
     <!-- Link to JavaScript file -->
     <script src="script.js"></script>
+
+    <!-- Script for font awesome icons -->
+    <script src="https://kit.fontawesome.com/9249e426d1.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
