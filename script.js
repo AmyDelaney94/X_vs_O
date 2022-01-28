@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const boxElements = document.querySelectorAll('[data-cell]');
 const playerX = 'X';
 const playerO = 'O';
+const Draw = 'Draw';
 let X_Turn;
 const winningBoard = [
     [0, 1, 2],
@@ -107,6 +108,11 @@ function handleClick(e) {
         notGameOver();
         return;
     }
+
+    if(gameWon(currentPlayer && cpuSelect)) {
+        Draw();
+        return;
+    }
 }
 
 /**
@@ -129,6 +135,15 @@ function notGameOver() {
     resetGame();
     alert(`Game Over! You Lose!`);
 }
+
+/**
+ * Gets the current amount of games won from the DOM and increments it by 1. 
+ */
+//  function Draw() {
+//     document.getElementById('score').innerHTML = score;
+//     resetGame();
+//     alert(`Awh its a Draw :( Try Again!`);
+// }
 
 
 /**
