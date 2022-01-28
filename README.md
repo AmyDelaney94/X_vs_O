@@ -226,7 +226,9 @@ JavaScript| Site Wide | **ADD IMAGE HERE**
 - https://www.w3schools.com/default.asp
     - used for help with css, JS and HTML
 
-- stack overflow 
+- <a href="https://stackoverflow.com/">Stack Overflow</a>
+
+- <a href="https://css-tricks.com/almanac/properties/a/animation/">CSS-Tricks</a> 
 
 <!-- TOC --><a name="acknowledgements"></a>
 ### Acknowledgements

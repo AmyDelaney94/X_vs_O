@@ -104,7 +104,7 @@ function handleClick(e) {
     nextTurn();
 
     if (gameWon(currentPlayer)) {
-        gameOver();
+        notGameOver();
         return;
     }
 }
@@ -124,7 +124,7 @@ function gameOver() {
  * Gets the current amount of games won from the DOM and decreases it by 1. 
  */
 function notGameOver() {
-    score -= 1;
+    score -- ;
     document.getElementById('score').innerHTML = score;
     resetGame();
     alert(`Game Over! You Lose!`);
