@@ -65,7 +65,7 @@ function handleClick(e) {
         return;
     }
 
-    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O';
+    // if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O';
 
     let box = e.target;
     let currentPlayer = X_Turn ? playerO : playerX;
@@ -87,12 +87,12 @@ function handleClick(e) {
     while (true) {
         
         let boxes = document.getElementsByClassName('box');
-        let cpuSelect = Math.floor(Math.random() * 8);
+        let cpuSelect = Math.floor(Math.random() * 9);
         if (chosenBoxes.includes(cpuSelect.toString())) {
-            chosenBoxes.push(cpuSelect.toString());
+            // chosenBoxes.push(cpuSelect.toString());
             alert("Oops, computer chose a wrong number");
         } else {
-           console.log(chosenBoxes);
+        //    console.log(chosenBoxes);
             box = boxes[cpuSelect];
 
             let isIn = false;
