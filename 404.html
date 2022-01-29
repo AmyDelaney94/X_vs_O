@@ -34,9 +34,10 @@
     }
 
     .error-image {
-        background-image: url('assets/screenshots/XandO.PNG');
+        background: url("/assets/screenshots/XandO.PNG") center no-repeat;
         width: 33%;
-        height: 100px;
+        margin: auto;
+        height: 600px;
     }
     .error-404 {
         color: #FF7F50;
@@ -46,7 +47,7 @@
         width: 100%;
     }
 
-    .class {
+    .error-button {
         margin-top: 20px;
         border-radius: 15px;
         padding: 15px 32px;
@@ -56,7 +57,6 @@
         margin-right: auto;
         font-size: 100%;
         background-color: #FF7F50;
-        color: white;
         display: block;
     }
 </style>
@@ -70,7 +70,7 @@
             <h3>We can't find the page you are looking for!! </h3>
             <p>
                 <!-- Link to the correct website -->
-                <button class="active" onclick="window.location.href='https://amydelaney94.github.io/X_vs_O/index.html'"
+                <button class="error-button" onclick="window.location.href='https://amydelaney94.github.io/X_vs_O/index.html'"
                     target="_blank">Click Here to Play X's and O's!</button>
             </p>
         </div>
