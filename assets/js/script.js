@@ -65,7 +65,7 @@ function handleClick(e) {
         return;
     }
 
-    // if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O';
+    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O'; 
 
     let box = e.target;
     let currentPlayer = X_Turn ? playerO : playerX;
