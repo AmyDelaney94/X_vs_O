@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 const boxElements = document.querySelectorAll('[data-cell]');
 const playerX = 'X';
 const playerO = 'O';
-const Draw = 'Draw';
 let X_Turn;
 const winningBoard = [
     [0, 1, 2],
@@ -66,7 +65,7 @@ function handleClick(e) {
         return;
     }
 
-    // if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O';
+    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O';
 
     let box = e.target;
     let currentPlayer = X_Turn ? playerO : playerX;
@@ -80,7 +79,7 @@ function handleClick(e) {
         return;
     }
 
-    chosenBoxes.push(e.target.dataset.number ); //takes the box chosen by the user.
+    chosenBoxes.push(e.target.dataset.number); //takes the box chosen by the user.
     console.log(chosenBoxes); //This prints user's box location to the console.
 
 
@@ -88,11 +87,12 @@ function handleClick(e) {
     while (true) {
         
         let boxes = document.getElementsByClassName('box');
-        let cpuSelect = Math.floor(Math.random() * 9);
+        let cpuSelect = Math.floor(Math.random() * 8);
         if (chosenBoxes.includes(cpuSelect.toString())) {
-            alert("Oops, computer chose a wrong number")
+            chosenBoxes.push(cpuSelect.toString());
+            alert("Oops, computer chose a wrong number");
         } else {
-            
+           console.log(chosenBoxes);
             box = boxes[cpuSelect];
 
             let isIn = false;
@@ -112,16 +112,12 @@ function handleClick(e) {
 
         nextTurn();
 
-        if (gameWon(currentPlayer)) {
+        if (gameWon(cpuSelect)) {
             notGameOver();
             return;
         }
     };
 
-    // if(gameWon(currentPlayer && cpuSelect)) {
-    //     Draw();
-    //     return;
-    // }
 }
 
 /**
@@ -152,6 +148,7 @@ function notGameOver() {
 //     document.getElementById('score').innerHTML = score;
 //     resetGame();
 //     alert(`Awh its a Draw :( Try Again!`);
+
 // }
 
 
