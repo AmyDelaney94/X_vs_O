@@ -28,6 +28,8 @@ const winningBoard = [
     [0, 4, 8],
     [2, 4, 6]
 ];
+let chosenBoxes = [];
+// let choice = document.getElementsByClassName('box');
 
 const displayText = document.getElementById('p1');
 let playerOption = null;
@@ -78,41 +80,69 @@ function handleClick(e) {
         return;
     }
 
+    chosenBoxes.push(e.target.dataset.number); //takes the box chosen by the user and prints its location.
+    console.log(chosenBoxes);
+
     currentPlayer = X_Turn ? playerO : playerX;
     while (true) {
         let boxes = document.getElementsByClassName('box');
         let cpuSelect = Math.floor(Math.random() * 9);
-        if (cpuSelect == 9) {
-            cpuSelect--;
-        }
-        box = boxes[cpuSelect];
+        if (chosenBoxes.includes(cpuSelect.toString())) {
+            alert("Oops, computer chose a wrong number")
+        } else {
 
-        let isIn = false;
-        for (let i = 0; i < box.classList.length; i++) {
-            if (currentPlayer == box.classList[i]) {
-                isIn = true;
+            box = boxes[cpuSelect];
+
+            let isIn = false;
+            for (let i = 0; i < box.classList.length; i++) {
+                if (currentPlayer == box.classList[i]) {
+                    isIn = true;
+                }
             }
+
+            if (isIn) {
+                continue;
+            }
+            box.textContent = currentPlayer;
+            makeMove(box, currentPlayer);
+            break;
         }
 
-        if (isIn) {
-            continue;
+        nextTurn();
+
+        if (gameWon(currentPlayer)) {
+            notGameOver();
+            return;
         }
-        box.textContent = currentPlayer;
-        makeMove(box, currentPlayer);
-        break;
-    }
+    };
 
-    nextTurn();
+    //     box = boxes[cpuSelect];
 
-    if (gameWon(currentPlayer)) {
-        notGameOver();
-        return;
-    }
+    //     let isIn = false;
+    //     for (let i = 0; i < box.classList.length; i++) {
+    //         if (currentPlayer == box.classList[i]) {
+    //             isIn = true;
+    //         }
+    //     }
 
-    if(gameWon(currentPlayer && cpuSelect)) {
-        Draw();
-        return;
-    }
+    //     if (isIn) {
+    //         continue;
+    //     }
+    //     box.textContent = currentPlayer; makeMove(box, currentPlayer);
+    //     break;
+    // }
+
+    // nextTurn();
+
+    // if (gameWon(currentPlayer)) {
+    //     notGameOver();
+    //     return;
+    // }
+
+    // if(gameWon(currentPlayer && cpuSelect)) {
+    //     Draw();
+    //     return;
+    // }
 }
 
 /**
@@ -130,7 +160,7 @@ function gameOver() {
  * Gets the current amount of games won from the DOM and decreases it by 1. 
  */
 function notGameOver() {
-    score -- ;
+    score--;
     document.getElementById('score').innerHTML = score;
     resetGame();
     alert(`Game Over! You Lose!`);
