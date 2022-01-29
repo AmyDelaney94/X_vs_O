@@ -32,18 +32,13 @@
         width: 100%;
     }
 
-    .error-image {
-        background-image: url("/assets/screenshots/XandO.PNG") center no-repeat;
-        width: 33%;
-        margin: auto;
-        height: 100px;
-    }
     .error-404 {
         color: #FF7F50;
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 100%;
+        font-weight: 700;
     }
 
     .error-button {
@@ -59,17 +54,18 @@
         display: block;
     }
 </style>
+
 </head>
 
 <body>
     <div class="main">
-        <div class="error-image"></div>
         <div class="error-404">
             <h1>Oopps!!</h1>
             <h3>We can't find the page you are looking for!! </h3>
             <p>
                 <!-- Link to the correct website -->
-                <button class="error-button" onclick="window.location.href='https://amydelaney94.github.io/X_vs_O/index.html'"
+                <button class="error-button"
+                    onclick="window.location.href='https://amydelaney94.github.io/X_vs_O/index.html'"
                     target="_blank">Click Here to Play X's and O's!</button>
             </p>
         </div>
