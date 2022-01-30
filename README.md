@@ -2,7 +2,7 @@
 <!-- TOC --><a name="xs-vs-os"></a>
 # X's vs O's
 
-<img src="assets/images/amIresponsive.jpg" alt="Image of Am I responsive site with various pages open">
+<img src="assets/images/responsive.PNG" alt="Image of Am I responsive site with various pages open">
 
 X's and O's is a 3*3 two player game. This website has been created to allow a player to play against the computer. The website is easy to navigate through buttons that lead to a game area, rules section, and feedback form.
 
@@ -22,13 +22,7 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
   * [Features](#features)
     + [General ](#general)
       - [Header](#header)
-    + [Home Page](#home-page)
-    + [Game Area](#game-area)
-        * [Player Choice](#player-choice)
-        * [Score](#score)
-        * [Reset Button](#reset-button)
-    + [Rules ](#rules)
-    + [Feedback Form](#feedback-form)
+    + [Page Features](#page-features)
   * [Technology Used ](#technology-used)
     + [Languages Used](#languages-used)
     + [Other Technologies Used](#other-technologies-used)
@@ -87,51 +81,24 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 
 <!-- TOC --><a name="header"></a>
 #### Header
-<img src="assets/screenshots/Heading.PNG" alt="Screenshot of Site heading">
 - The heading contaings the site name and is present on every game page.
+<img src="assets/screenshots/Heading.PNG" alt="Screenshot of Site heading">
 
-<!-- TOC --><a name="home-page"></a>
-### Home Page
-<img src="assets/screenshots/HomePage.PNG" alt="Screenshot of home page">
+<!-- TOC --><a name="page-features"></a>
+###  Page Features
 
-#### Main Buttons
-<img src="assets/screenshots/buttons.PNG" alt="Screenshot of Site heading">
-- The buttons on the home page direct the player to the game area, a rules pop-up, or a feedback form page. 
-    - The Play button brings players to the Game Page.
-    - The Rules button activates a pop-up showing the rules and site controls.
-    - The Feedback button brings players to an accessible form to be able to submit their feedback.
-
-#### Rules Pop-Up
-<img src="assets/screenshots/Rulessection.PNG" alt="Screenshot of Rules pop-up function">
-<img src="assets/screenshots/RulesPopedUp.PNG" alt="Screenshot of Rules pop-up function as seen on live site">
-- The Rules pop-up explains the rules of the game to the player and has a visible close button. Alternatively the players can choose the play button directly to go from Rules to Game Play. 
-
-<!-- TOC --><a name="game-area"></a>
-### Game Area
-<img src="assets/screenshots/gamePage.PNG" alt="Image of the game screen">
-
-<!-- TOC --><a name="player-choice"></a>
-##### Player Choice
-<img src="assets/screenshots/choice.PNG" alt="Image of radio buttons for player choice">
-- Allows the player to chose X or O.
-
-<!-- TOC --><a name="score"></a>
-##### Score
-<img src="assets/screenshots/Score.PNG" alt="Image of Score Counter">
-- Counts number of games Won against the computer.
-
-<!-- TOC --><a name="reset-button"></a>
-##### Reset Button
-<img src="assets/screenshots/Reset.PNG" alt="Image of Reset Button">
-- Allows user to reset the game. 
-
-<!-- TOC --><a name="feedback-form"></a>
-### Feedback Form
-<img src="assets/screenshots/Formonmobile.PNG" alt="Screen grab of the form on a mobile device.">
-<img src="assets/screenshots/formsubmission.PNG" alt="Screen grab of the form submission button.">
-- The feedback form was added to allow users to submit feedback on the site.
-- The form also promts users to fill in any blanks before submission.
-<img src="assets/screenshots/promtforinfo.PNG" alt="Screenshot of the form promts.">
+Feature | Image | Notes   
+---|---|---
+Home Page | <img src="assets/screenshots/HomePage.PNG" alt="Screenshot of home page"> | - Overview of homepage.
+Main Buttons | <img src="assets/screenshots/buttons.PNG" alt="Screenshot of Site heading"> | - The buttons on the home page direct the player to the game area, a rules pop-up, or a feedback form page.<br> - The Play button brings players to the Game Page. <br> - The Rules button activates a pop-up showing the rules and site controls. <br> - The Feedback button brings players to an accessible form to be able to submit their feedback.
+Rules Pop-up | <img src="assets/screenshots/RulesPopedUp.PNG" alt="Screenshot of Rules pop-up function as seen on live site"> | - The Rules pop-up explains the rules of the game to the player and has a visible close button. Alternatively the players can choose the play button directly to go from Rules to Game Play. 
+Game Area | <img src="assets/screenshots/gamePage.PNG" alt="Image of the game screen"> | - Game Area is comprised of a 3*3 grid and includes a player choice button and reset button. 
+Player Choice | <img src="assets/screenshots/choice.PNG" alt="Image of radio buttons for player choice"> | - Allows the player to chose X or O.
+Score Counter | <img src="assets/screenshots/Score.PNG" alt="Image of Score Counter"> | - Counts number of games Won against the computer.
+Reset Button | <img src="assets/screenshots/Reset.PNG" alt="Image of Reset Button"> | - Allows user to reset the game. 
+Feedback Form | <img src="assets/screenshots/Formonmobile.PNG" alt="Screen grab of the form on a mobile device."> | - The feedback form was added to allow users to submit feedback on the site.
+Form submission button | <img src="assets/screenshots/formsubmission.PNG" alt="Screen grab of the form submission button."> | - Used to submit feedback  
+Blank Entry Promt | <img src="assets/screenshots/promtforinfo.PNG" alt="Screenshot of the form promts."> | - The form also promts users to fill in any blanks before submission.
 
 
 <!-- TOC --><a name="technology-used"></a>
@@ -211,9 +178,9 @@ HTML | Game Page | <img src="assets/images/playhtmlvalidatorscore.PNG" alt="HTML
 JavaScript| Site Wide | **ADD IMAGE HERE** 
 
 ### Lighthouse Reports
-    - index.html
-    - play.html
-    - feedback.html
+Report | Score Summary  
+--- | --- 
+Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary of results from Lighthouse validation testing">
 
 <!-- TOC --><a name="references"></a>
 ## References: 
@@ -224,12 +191,17 @@ JavaScript| Site Wide | **ADD IMAGE HERE**
 
 - <a href="https://www.w3schools.com/default.asp">W3Schools</a> was used as a resource for the creation of my css, JavaScript, and HTML.
 
-- <a href="https://stackoverflow.com/">Stack Overflow</a>
+- <a href="https://stackoverflow.com/">Stack Overflow</a> Used for assistance with troubleshooting issues. 
 
-- <a href="https://css-tricks.com/almanac/properties/a/animation/">CSS-Tricks</a> 
+- <a href="https://css-tricks.com/almanac/properties/a/animation/">CSS-Tricks</a> used for assistance with improving site responsiveness. 
 
 <!-- TOC --><a name="acknowledgements"></a>
 ### Acknowledgements
-    
+- First I would like to thank my Partner for his love and support throughout the completion of this project. 
+- I would also like to thank my mentor Marcel for his advice and support.
+- My friends for constantly testing the project on their different devices. 
+- Tutor Assistance for their help with fixing my GitPod following the global crash. 
+- Code Institute and its Slack community for their support and providing me with the necessary knowledge to complete this project.
+
 
     

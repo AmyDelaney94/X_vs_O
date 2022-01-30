@@ -29,7 +29,6 @@ const winningBoard = [
 ];
 
 let chosenBoxes = [];
-
 const displayText = document.getElementById('p1');
 let playerOption = null;
 let score = 0;
@@ -65,7 +64,7 @@ function handleClick(e) {
         return;
     }
 
-    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O'; 
+    if (typeof X_Turn === 'undefined') X_Turn = playerOption === 'O';
 
     let box = e.target;
     let currentPlayer = X_Turn ? playerO : playerX;
@@ -82,22 +81,20 @@ function handleClick(e) {
     chosenBoxes.push(e.target.dataset.number); //takes the box chosen by the user.
     console.log(chosenBoxes); //This prints user's box location to the console.
 
-
     currentPlayer = X_Turn ? playerO : playerX;
     while (true) {
-        
-        let boxes = document.getElementsByClassName('box');
-        let cpuSelect = Math.floor(Math.random() * 9);
+            let boxes = document.getElementsByClassName('box');
+            let randonNumber = () => Math.floor(Math.random() * 9);
+            let cpuSelect = randonNumber();
         if (chosenBoxes.includes(cpuSelect.toString())) {
-            // chosenBoxes.push(cpuSelect.toString());
+            randonNumber();
             alert("Oops, computer chose a wrong number");
         } else {
-        //    console.log(chosenBoxes);
             box = boxes[cpuSelect];
 
             let isIn = false;
             for (let i = 0; i < box.classList.length; i++) {
-                if (currentPlayer == box.classList[i]) {
+                if (currentPlayer === box.classList[i]) {
                     isIn = true;
                 }
             }
@@ -109,6 +106,7 @@ function handleClick(e) {
             makeMove(box, currentPlayer);
             break;
         }
+    }
 
         nextTurn();
 
@@ -117,8 +115,6 @@ function handleClick(e) {
             return;
         }
     };
-
-}
 
 /**
  * Gets the current amount of games won from the DOM and increments it by 1. 
@@ -140,17 +136,6 @@ function notGameOver() {
     resetGame();
     alert(`Game Over! You Lose!`);
 }
-
-/**
- * Gets the current amount of games won from the DOM and increments it by 1. 
- */
-//  function Draw() {
-//     document.getElementById('score').innerHTML = score;
-//     resetGame();
-//     alert(`Awh its a Draw :( Try Again!`);
-
-// }
-
 
 /**
  * function to reset game once button selected or game over
