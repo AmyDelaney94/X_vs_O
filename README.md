@@ -2,7 +2,7 @@
 <!-- TOC --><a name="xs-vs-os"></a>
 # X's vs O's
 
-<img src="assets/images/responsive.PNG" alt="Image of Am I responsive site with various pages open">
+<img src="assets/images/responsive.png" alt="Image of Am I responsive site with various pages open">
 
 X's and O's is a 3*3 two player game. This website has been created to allow a player to play against the computer. The website is easy to navigate through buttons that lead to a game area, rules section, and feedback form.
 
@@ -28,8 +28,8 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
     + [Other Technologies Used](#other-technologies-used)
   * [Testing](#testing)
   * [Bugs](#bugs)
-  * [Deployment] (#deployment)
-  * [References: ](#references)
+  * [Deployment](#deployment)
+  * [References](#references)
       - [Code](#code)
     + [Acknowledgements](#acknowledgements)
 <!-- TOC end -->
@@ -56,7 +56,7 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
 
 <!-- TOC --><a name="colour-scheme"></a>
 ### Colour Scheme
-<img src="assets/screenshots/XvsOcolourscheme.png" alt="Image of colour pallete used">
+<img src="assets/screenshots/xvsocolourscheme.png" alt="Image of colour pallete used">
 The colours used in this project compliment eachother and were chosen using the website <a href="https://coolors.co/">Coolors</a>. The sites background is a blue linear gradient from #00D2FF to #3A47D5 which was sourced from <a href="https://cssgradient.io/blog/linear-gradient-css/">CSS Gradient</a>. The game heading and main buttons are a coral colour of #FF7F50, this colour is also used in the border of the forms text boxes. The container for the rules pop-up and heading of the form are a yellow, #FFD166. The close button of the rules pop-up is a pale lilac, #E6ADEC. The text used in buttons and form is a grey, #3C3C3C.    
 
 <!-- TOC --><a name="typography"></a>
@@ -189,16 +189,16 @@ iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 Code | Page | Score  
 --- | --- | --- 
-CSS | Site Wide | <img src="assets/images/CSSvalidation.jpg" alt="Screenshot of CSS validation results">
-HTML | Home Page | <img src="assets/images/indexscore.PNG" alt="HTML validation results for the Home screen"> 
-HTML | Feedback Form| <img src="assets/images/feedbackhtmlvalidatorscore.PNG" alt=" HTML validation results for the feedback form"> 
-HTML | Game Page | <img src="assets/images/playhtmlvalidatorscore.PNG" alt="HTML validation results for the Game screen">
+CSS | Site Wide | <img src="assets/images/cssvalidation.jpg" alt="Screenshot of CSS validation results">
+HTML | Home Page | <img src="assets/images/indexscore.png" alt="HTML validation results for the Home screen"> 
+HTML | Feedback Form| <img src="assets/images/feedbackvalidatorscore.png" alt=" HTML validation results for the feedback form"> 
+HTML | Game Page | <img src="assets/images/playhtmlvalidatorscore.png" alt="HTML validation results for the Game screen">
 JavaScript| Site Wide | **ADD IMAGE HERE** 
 
 ### Lighthouse Reports
 Report | Score | Summary  
 --- | --- | ---
-Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary of results from Lighthouse validation testing"> | - Used <a href="https://web.dev/measure/?gclid=Cj0KCQiAweaNBhDEARIsAJ5hwbczVsoK10OpLKs4epRzetRRAXVlkYT5yVfwU0CNb6FB4UNvojxrk_saAjzqEALw_wcB">Lighthouse</a> to confirm that the colors and fonts being used in throughout the website are easy to read and accessible. <br> - Was also used to test that the page loads correctly without delay to ensure a positive user experience.
+Report | <img src="assets/images/lighthouse.png" alt="Screenshot of the summary of results from Lighthouse validation testing"> | - Used <a href="https://web.dev/measure/?gclid=Cj0KCQiAweaNBhDEARIsAJ5hwbczVsoK10OpLKs4epRzetRRAXVlkYT5yVfwU0CNb6FB4UNvojxrk_saAjzqEALw_wcB">Lighthouse</a> to confirm that the colors and fonts being used in throughout the website are easy to read and accessible. <br> - Was also used to test that the page loads correctly without delay to ensure a positive user experience.
 
 
 ### Common Elements Testing 
@@ -245,13 +245,13 @@ Back to Game Button | Brings user to Home Page when clicked | Pass
 ### Fixed Bugs:
 Bug | Image | Notes 
 --- | --- | --- 
-Prevented Computer Player from chosing the box chosen in the previous turn. | <img src="assets/images/CPUoverwritebug.PNG" alt="image of cpu overwriting choices made Bug"> | - This was achieved through the introduction of the function randomNumber(). <br> - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box. <br> - I researched this issue on stack overflow and fixed the issue with logic. <br> - When this bug was fixed it gave rise to my unfixed bug. 
-Game Won Showing in Error. | <img src="assets/images/CpuWin.PNG" alt="Image of the win game error prior to fix"> | - This bug was observed when the game was won by either the User or Computer. <br> - It caused the Score to increment in error. <br> - It was fixed by adding a new function for the scenario when the User loses the game. <br> - This new function now decrements the score by 1 when the user loses a game.
+Prevented Computer Player from chosing the box chosen in the previous turn. | <img src="assets/images/cpuoverwritebug.png" alt="image of cpu overwriting choices made Bug"> | - This was achieved through the introduction of the function randomNumber(). <br> - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box. <br> - I researched this issue on stack overflow and fixed the issue with logic. <br> - When this bug was fixed it gave rise to my unfixed bug. 
+Game Won Showing in Error. | <img src="assets/images/cpuwin.png" alt="Image of the win game error prior to fix"> | - This bug was observed when the game was won by either the User or Computer. <br> - It caused the Score to increment in error. <br> - It was fixed by adding a new function for the scenario when the User loses the game. <br> - This new function now decrements the score by 1 when the user loses a game.
 
 ### Unfixed Bugs: 
 Bug | Image | Notes 
 --- | --- | --- 
-CPU overwriting previous choices made by the user | <img src="assets/images/BuginCpu.PNG" alt="Image of the CPU bug ovserved through watching HTML and Array designed to note moves made by user"> |  - Given more time I would add another function to the JavaScript file to prevent the CPU from chosing any pre-selected box rather than just the one from the current turn.<br> - Extensive testing was done through the use of DevTools as seen in the image I was able to watch the moves chosen by the user and CPU in the HTML and watch the moves chosen my the user in the console. <br> - I used an alert for testing the site for the bug and noted when it was occuring. <br> - I used resources such as Tutor Support, Slacks Peer Review Chanel, Stack Overflow, and GeeksforGeeks for help with solving the issues I was having with this bug, however I was still unable to remove it completely. <br> I attempted to fix this bug logically through the use of functions and given more time I would use a .trim() function to remove the unavailale options from the game to prevent this bug impacting the users experience in the future. 
+CPU overwriting previous choices made by the user | <img src="assets/images/cpubug.png" alt="Image of the CPU bug ovserved through watching HTML and Array designed to note moves made by user"> |  - Given more time I would add another function to the JavaScript file to prevent the CPU from chosing any pre-selected box rather than just the one from the current turn.<br> - Extensive testing was done through the use of DevTools as seen in the image I was able to watch the moves chosen by the user and CPU in the HTML and watch the moves chosen my the user in the console. <br> - I used an alert for testing the site for the bug and noted when it was occuring. <br> - I used resources such as Tutor Support, Slacks Peer Review Chanel, Stack Overflow, and GeeksforGeeks for help with solving the issues I was having with this bug, however I was still unable to remove it completely. <br> I attempted to fix this bug logically through the use of functions and given more time I would use a .trim() function to remove the unavailale options from the game to prevent this bug impacting the users experience in the future. 
 
 <!-- TOC --><a name="deployment"></a>
 ## Deployment: 
