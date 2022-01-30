@@ -119,7 +119,7 @@ function handleClick(e) {
         chosenBoxes = [];
         return;
     }
-};
+}
 
 /**
  * Gets the current amount of games won from the DOM and increments it by 1. 

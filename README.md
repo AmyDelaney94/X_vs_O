@@ -193,7 +193,7 @@ CSS | Site Wide | <img src="assets/images/cssvalidation.jpg" alt="Screenshot of 
 HTML | Home Page | <img src="assets/images/indexscore.png" alt="HTML validation results for the Home screen"> 
 HTML | Feedback Form| <img src="assets/images/feedbackvalidatorscore.png" alt=" HTML validation results for the feedback form"> 
 HTML | Game Page | <img src="assets/images/playhtmlvalidatorscore.png" alt="HTML validation results for the Game screen">
-JavaScript| Site Wide | **ADD IMAGE HERE** 
+JavaScript| Site Wide | <img src="assets/images/jshintvalidation.png" alt="JSHint validation results for the JavaScript Script">
 
 ### Lighthouse Reports
 Report | Score | Summary  
