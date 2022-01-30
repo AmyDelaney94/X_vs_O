@@ -110,7 +110,7 @@ function handleClick(e) {
 
         nextTurn();
 
-        if (gameWon(cpuSelect)) {
+        if (gameWon(!playerOption)) {
             notGameOver();
             return;
         }
