@@ -27,7 +27,6 @@ const winningBoard = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-// let cpuSelect;
 let chosenBoxes = [];
 const displayText = document.getElementById('p1');
 let playerOption = null;

@@ -188,6 +188,8 @@ iPhone SE| No appearance, responsiveness nor functionality issues. | Pass
 
 - There were no errors found when passing code through the <a href="https://validator.w3.org/nu/">Html Validator</a> on any of the pages.
 
+- On the code validator sites I tested using both the sites URL's and by passing the code through the generator to ensure no errors were present. 
+
 Code | Page | Score  
 --- | --- | --- 
 CSS | Site Wide | <img src="assets/images/cssvalidation.jpg" alt="Screenshot of CSS validation results">
