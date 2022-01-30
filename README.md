@@ -247,8 +247,7 @@ Game Won Showing in Error. | <img src="assets/images/CpuWin.PNG"> | - This bug w
 ### Unfixed Bugs: 
 Bug | Image | Notes 
 --- | --- | --- 
-CPU overwriting previous choices made by the user | 
-
+CPU overwriting previous choices made by the user | |  - Given more time I would add another function to the JavaScript file to prevent the CPU from chosing any pre-selected box rather than just the one from the previous turn. <br> - I used an alert for testing the site for the bug and noted when it was occuring. <br> - I used resources such as Tutor Support, Slacks Peer Review Chanel, Stack Overflow, and GeeksforGeeks for help with solving the issues I was having with this bug, however I was still unable to remove it completely. <br> I attempted to fix this bug logically through the use of functions and given more time I would use a .trim() function to remove the unavailale options from the game to prevent this bug impacting the users experience in the future. 
 
 <!-- TOC --><a name="deployment"></a>
 ## Deployment: 
