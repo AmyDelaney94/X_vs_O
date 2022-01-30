@@ -144,12 +144,16 @@ Blank Entry Promt | <img src="assets/screenshots/promtforinfo.PNG" alt="Screensh
 - As a player, I want the website to be easy to navigate between pages.
     - The buttons on the site allow easy navigation across the site. 
     - The heading is also a link back to all the home page.
+
 - As a player, I want the rules to be easily accessable. 
     - This has been achieved through a Pop-up button on the home screen.
+
 - As a player, I want the game to be user friendly.
     - The games design was kept simple and and easy to use with basic controls.
+
 - As a player, I want the game to work on multiple devices.
     - The Game is responsive on multiple screen sizes. 
+
 - As a player, I want the game to be fun and engaging.
     - The sites clours have been chosen to compliment each other.
     - The colours stay consistent throughout the sites pages. 

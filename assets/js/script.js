@@ -27,7 +27,7 @@ const winningBoard = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-
+let cpuSelect;
 let chosenBoxes = [];
 const displayText = document.getElementById('p1');
 let playerOption = null;
@@ -59,6 +59,10 @@ clickBox();
  * Function for clicking the box designed to take the Event (e)
  */
 function handleClick(e) {
+    console.log("Player option here");
+    console.log(playerOption);
+
+    // Player selection statements
     if (!playerOption) {
         alert("Please choose a player first!");
         return;
@@ -75,46 +79,47 @@ function handleClick(e) {
 
     if (gameWon(playerOption)) {
         gameOver();
+        chosenBoxes = [];
         return;
     }
 
     chosenBoxes.push(e.target.dataset.number); //takes the box chosen by the user.
-    console.log(chosenBoxes); //This prints user's box location to the console.
 
+    // Computer selection statements
     currentPlayer = X_Turn ? playerO : playerX;
     while (true) {
-            let boxes = document.getElementsByClassName('box');
-            let randonNumber = () => Math.floor(Math.random() * 9);
-            let cpuSelect = randonNumber();
-        if (chosenBoxes.includes(cpuSelect.toString())) {
-            randonNumber();
-            alert("Oops, computer chose a wrong number");
+        let boxes = document.getElementsByClassName('box');
+        let cpuSelect = Math.floor(Math.random() * 9);
+        box = boxes[cpuSelect];
+        let okToChoose = true;
+        for (let j = 0; j < box.classList.length; j++) {
+            let classVal = box.classList[j];
+            if (classVal == "X") {
+                okToChoose = false;
+            } else if (classVal == "O") {
+                okToChoose = false;
+            }
+        }
+        // Check if ok to proceed
+        if (okToChoose == false) {
+            continue;
         } else {
-            box = boxes[cpuSelect];
-
-            let isIn = false;
-            for (let i = 0; i < box.classList.length; i++) {
-                if (currentPlayer === box.classList[i]) {
-                    isIn = true;
-                }
-            }
-
-            if (isIn) {
-                continue;
-            }
-            box.textContent = currentPlayer;
-            makeMove(box, currentPlayer);
             break;
         }
     }
+    // At this point the CPU has a good value to proceed
+    console.log(box);
+    box.textContent = currentPlayer;
+    makeMove(box, currentPlayer);
 
-        nextTurn();
+    nextTurn();
 
-        if (gameWon(!playerOption)) {
-            notGameOver();
-            return;
-        }
-    };
+    if (gameWon(!playerOption)) {
+        notGameOver();
+        chosenBoxes = [];
+        return;
+    }
+};
 
 /**
  * Gets the current amount of games won from the DOM and increments it by 1. 
@@ -151,8 +156,10 @@ function resetGame() {
         X_Turn = undefined;
         box.textContent = '';
         box.classList.remove('X', 'O');
-        displayText.innerHTML = 'Please Choose your player:';
+        displayText.innerHTML = 'Please choose your player:';
     });
+    // Apply clickbox event listener
+    clickBox();
 }
 
 /**
