@@ -198,55 +198,56 @@ Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary 
 
 
 ### Common Elements Testing 
-    - General
-    Feature | Outcome | Pass/Fail
-    --- | --- | ---
-    Heading | CSS styles work as expected on each page | Pass
-    Buttons | Operate as expected | Pass
+- General
 
-    - Home Page
-    Feature | Outcome | Pass/Fail
-    --- | --- | ---
-    Play Button | Navigates to Game Screen | Pass
-    Rules Button | Activates Rules Pop-Up Function | Pass
-    Rules Close Button | Closes Pop-Up as expected | Pass
-    Feedback Button | Navigates to Feedback Section as expected | Pass
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Heading | CSS styles work as expected on each page | Pass
+Buttons | Operate as expected | Pass
 
-    - Game Page
-    Feature | Outcome | Pass/Fail
-    --- | --- | ---
-    Player Choice | Allows player to chose X or O | Pass
-    Computer | Playes against the user as Player 2 | Pass
-    Reset Button | Clears Game Board and Player Choice when selected | Pass
+- Home Page
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Play Button | Navigates to Game Screen | Pass
+Rules Button | Activates Rules Pop-Up Function | Pass
+Rules Close Button | Closes Pop-Up as expected | Pass
+Feedback Button | Navigates to Feedback Section as expected | Pass
+
+- Game Page
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Player Choice | Allows player to chose X or O | Pass
+Computer | Playes against the user as Player 2 | Pass
+Reset Button | Clears Game Board and Player Choice when selected | Pass
     
-    - Feedback Form Page
-    Feature | Outcome | Pass/Fail
-    --- | --- | ---
-    Form | Require all fields in the right format before submission | Pass
-    Send Feedback Button | Submits form when cicked | Pass
+- Feedback Form Page
 
-    - Error 404 Page
-    Feature | Outcome | Pass/Fail
-    --- | --- | ---
-    404 Error Page | Entering an incorrect address brings the player to the 404 error page | Pass
-    Back to Game Button | Brings user to Home Page when clicked | Pass
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+Form | Require all fields in the right format before submission | Pass
+Send Feedback Button | Submits form when cicked | Pass
+
+- Error 404 Page
+
+Feature | Outcome | Pass/Fail
+--- | --- | ---
+404 Error Page | Entering an incorrect address brings the player to the 404 error page | Pass
+Back to Game Button | Brings user to Home Page when clicked | Pass
 
 <!-- TOC --><a name="bugs"></a>
 ## Bugs: 
 ### Fixed Bugs:
-- Prevented Computer Player from chosing the box chosen in the previous turn. 
-    - This was achieved through the introduction of the function randomNumber(). 
-    - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box.
-    - I researched this issue on stack overflow and fixed the issue with logic. 
-    - When this bug was fixed it gave rise to my unfixed bug. 
-- Game Won Showing in Error.
-    - This bug was observed when the game was won by either the User or Computer.
-    - It caused the Score to increment in error.
-    - It was fixed by adding a new function for the scenario when the User loses the game.
-        - This function decrements the score by 1. 
+Bug | Image | Notes 
+--- | --- | --- 
+Prevented Computer Player from chosing the box chosen in the previous turn. | <img src="assets/images/CPUoverwritebug.PNG"> | - This was achieved through the introduction of the function randomNumber(). <br> - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box. <br> - I researched this issue on stack overflow and fixed the issue with logic. <br> - When this bug was fixed it gave rise to my unfixed bug. 
+Game Won Showing in Error. | <img src="assets/images/CpuWin.PNG"> | - This bug was observed when the game was won by either the User or Computer. <br> - It caused the Score to increment in error. <br> - It was fixed by adding a new function for the scenario when the User loses the game. <br> - This function decrements the score by 1. 
 
 ### Unfixed Bugs: 
-- 
+Bug | Image | Notes 
+--- | --- | --- 
+CPU overwriting previous choices made by the user | 
 
 
 <!-- TOC --><a name="deployment"></a>
