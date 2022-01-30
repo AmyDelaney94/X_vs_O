@@ -245,7 +245,7 @@ Back to Game Button | Brings user to Home Page when clicked | Pass
 ## Bugs: 
 ### Fixed Bugs:
 Bug | Image | Notes 
---- | --- | --- 
+--- | --- | ---
 CPU overwriting previous choices made by the user | <img src="assets/images/cpuoverwritebug.png" alt="image of cpu overwriting choices made Bug"> <img src="assets/images/cpubug.png" alt="Image of the CPU bug ovserved through watching HTML and Array designed to note moves made by user"> | - This was achieved through the introduction of a for loop that checks if the box is available to be selected by the Computer. <br> - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box. <br> - Extensive testing was done through the use of DevTools as seen in the image I was able to watch the moves chosen by the user and CPU in the HTML and watch the moves chosen my the user in the console. <br> - I used resources such as Tutor Support, Slacks Peer Review Chanel, Stack Overflow to solve this issue. 
 
 Game Won Showing in Error. | <img src="assets/images/cpuwin.png" alt="Image of the win game error prior to fix"> | - This bug was observed when the game was won by either the User or Computer. <br> - It caused the Score to increment in error. <br> - It was fixed by adding a new function for the scenario when the User loses the game. <br> - This new function now decrements the score by 1 when the user loses a game.
