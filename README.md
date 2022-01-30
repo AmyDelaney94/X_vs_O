@@ -27,6 +27,8 @@ The deployed website can be found <a href="https://amydelaney94.github.io/X_vs_O
     + [Languages Used](#languages-used)
     + [Other Technologies Used](#other-technologies-used)
   * [Testing](#testing)
+  * [Bugs](#bugs)
+  * [Deployment] (#deployment)
   * [References: ](#references)
       - [Code](#code)
     + [Acknowledgements](#acknowledgements)
@@ -178,9 +180,27 @@ HTML | Game Page | <img src="assets/images/playhtmlvalidatorscore.PNG" alt="HTML
 JavaScript| Site Wide | **ADD IMAGE HERE** 
 
 ### Lighthouse Reports
-Report | Score Summary  
---- | --- 
-Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary of results from Lighthouse validation testing">
+Report | Score | Summary  
+--- | --- | ---
+Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary of results from Lighthouse validation testing"> | - Used <a href="https://web.dev/measure/?gclid=Cj0KCQiAweaNBhDEARIsAJ5hwbczVsoK10OpLKs4epRzetRRAXVlkYT5yVfwU0CNb6FB4UNvojxrk_saAjzqEALw_wcB">Lighthouse</a> to confirm that the colors and fonts being used in throughout the website are easy to read and accessible. <br> - Was also used to test that the page loads correctly without delay to ensure a positive user experience.
+
+<!-- TOC --><a name="bugs"></a>
+## Bugs: 
+### Fixed Bugs:
+
+### Unfixed Bugs: 
+
+<!-- TOC --><a name="deployment"></a>
+## Deployment: 
+- This website was developed using <a href="https://gitpod.io/workspaces">GitPod</a>, which was then committed and pushed to GitHub using the GitPod terminal.
+
+### GitHub Pages: 
+- The following steps can be used to deploy the website to GitHub Pages from the GitHub Repository:
+    - Log into GitHub and locate the <a href="https://github.com/AmyDelaney94/X_vs_O">GitHub Repository</a>.
+    - At the top the page locate the Settings button on the menu.
+    - Scroll down the Settings page until you locate the Pages Section. 
+    - Under Source, click the dropdown and select Master Branch.
+    - The page will refresh and generate the link to the website. The link will be active when the box surrounding the link turns from blue to green. 
 
 <!-- TOC --><a name="references"></a>
 ## References: 
