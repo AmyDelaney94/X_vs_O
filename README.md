@@ -145,10 +145,15 @@ Blank Entry Promt | <img src="assets/screenshots/promtforinfo.PNG" alt="Screensh
     - The buttons on the site allow easy navigation across the site. 
     - The heading is also a link back to all the home page.
 - As a player, I want the rules to be easily accessable. 
-    - 
+    - This has been achieved through a Pop-up button on the home screen.
 - As a player, I want the game to be user friendly.
+    - The games design was kept simple and and easy to use with basic controls.
 - As a player, I want the game to work on multiple devices.
-- As a player, I want the game to be fun and engaging. 
+    - The Game is responsive on multiple screen sizes. 
+- As a player, I want the game to be fun and engaging.
+    - The sites clours have been chosen to compliment each other.
+    - The colours stay consistent throughout the sites pages. 
+    - The score is displayed below the playing area. 
 
 ### Manual Testing 
 * Browser Compatability
@@ -190,6 +195,41 @@ JavaScript| Site Wide | **ADD IMAGE HERE**
 Report | Score | Summary  
 --- | --- | ---
 Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary of results from Lighthouse validation testing"> | - Used <a href="https://web.dev/measure/?gclid=Cj0KCQiAweaNBhDEARIsAJ5hwbczVsoK10OpLKs4epRzetRRAXVlkYT5yVfwU0CNb6FB4UNvojxrk_saAjzqEALw_wcB">Lighthouse</a> to confirm that the colors and fonts being used in throughout the website are easy to read and accessible. <br> - Was also used to test that the page loads correctly without delay to ensure a positive user experience.
+
+
+### Common Elements Testing 
+    - General
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Heading | CSS styles work as expected on each page | Pass
+    Buttons | Operate as expected | Pass
+
+    - Home Page
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Play Button | Navigates to Game Screen | Pass
+    Rules Button | Activates Rules Pop-Up Function | Pass
+    Rules Close Button | Closes Pop-Up as expected | Pass
+    Feedback Button | Navigates to Feedback Section as expected | Pass
+
+    - Game Page
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Player Choice | Allows player to chose X or O | Pass
+    Computer | Playes against the user as Player 2 | Pass
+    Reset Button | Clears Game Board and Player Choice when selected | Pass
+    
+    - Feedback Form Page
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Form | Require all fields in the right format before submission | Pass
+    Send Feedback Button | Submits form when cicked | Pass
+
+    - Error 404 Page
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    404 Error Page | Entering an incorrect address brings the player to the 404 error page | Pass
+    Back to Game Button | Brings user to Home Page when clicked | Pass
 
 <!-- TOC --><a name="bugs"></a>
 ## Bugs: 
