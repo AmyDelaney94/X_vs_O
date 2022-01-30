@@ -234,8 +234,20 @@ Report | <img src="assets/images/lighthouse.PNG" alt="Screenshot of the summary 
 <!-- TOC --><a name="bugs"></a>
 ## Bugs: 
 ### Fixed Bugs:
+- Prevented Computer Player from chosing the box chosen in the previous turn. 
+    - This was achieved through the introduction of the function randomNumber(). 
+    - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box.
+    - I researched this issue on stack overflow and fixed the issue with logic. 
+    - When this bug was fixed it gave rise to my unfixed bug. 
+- Game Won Showing in Error.
+    - This bug was observed when the game was won by either the User or Computer.
+    - It caused the Score to increment in error.
+    - It was fixed by adding a new function for the scenario when the User loses the game.
+        - This function decrements the score by 1. 
 
 ### Unfixed Bugs: 
+- 
+
 
 <!-- TOC --><a name="deployment"></a>
 ## Deployment: 
