@@ -59,8 +59,6 @@ clickBox();
  * Function for clicking the box designed to take the Event (e)
  */
 function handleClick(e) {
-    console.log("Player option here");
-    console.log(playerOption);
 
     // Player selection statements
     if (!playerOption) {
@@ -108,7 +106,6 @@ function handleClick(e) {
         }
     }
     // At this point the CPU has a good value to proceed
-    console.log(box);
     box.textContent = currentPlayer;
     makeMove(box, currentPlayer);
 
@@ -146,7 +143,6 @@ function notGameOver() {
  * function to reset game once button selected or game over
  */
 function resetGame() {
-    console.log('ResetGame');
     boxElements.forEach(box => {
         for (const btnSymbol of symbolsOptions) {
             btnSymbol.checked = false;
