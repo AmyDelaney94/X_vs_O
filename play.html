@@ -41,9 +41,9 @@
         <!-- Form not submitted, used for player selection -->
         <form action="#">
             <p id="p1"> Please Choose your player: </p>
-            <input type="radio" name="choose" id="option1" value="X">
+            <input aria-label="X" type="radio" name="choose" id="option1" value="X">
             <label for="option1">X</label>
-            <input type="radio" name="choose" id="option2" value="O">
+            <input aria-label="O" type="radio" name="choose" id="option2" value="O">
             <label for="option2">O</label>
         </form>
     </div>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="reset">
-        <button id="reset-button" class="active" data-type="submit">Reset Game</button>
+        <button aria-label="Reset" id="reset-button" class="active" data-type="submit">Reset Game</button>
     </div>
 
     <!-- Link to JavaScript file -->
