@@ -27,7 +27,7 @@ const winningBoard = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-let cpuSelect;
+// let cpuSelect;
 let chosenBoxes = [];
 const displayText = document.getElementById('p1');
 let playerOption = null;
@@ -111,7 +111,7 @@ function handleClick(e) {
 
     nextTurn();
 
-    if (gameWon(cpuSelect)) {
+    if (gameLost(currentPlayer)) {
         notGameOver();
         chosenBoxes = [];
         return;
@@ -180,6 +180,18 @@ function gameWon(currentPlayer) {
     return winningBoard.some(combination => {
         return combination.every(index => {
             return boxElements[index].classList.contains(currentPlayer);
+        });
+    });
+}
+
+/**
+ * Function to check if game has been lost by the user
+ * If all indexes are same for the computer then game over is displayed.
+ */
+function gameLost(playerOption) {
+    return winningBoard.some(combination => {
+        return combination.every(index => {
+            return boxElements[index].classList.contains(playerOption);
         });
     });
 }

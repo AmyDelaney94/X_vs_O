@@ -102,7 +102,7 @@ Reset Button | <img src="assets/screenshots/reset.png" alt="Image of Reset Butto
 Feedback Form | <img src="assets/screenshots/formonmobile.png" alt="Screen grab of the form on a mobile device."> | - The feedback form was added to allow users to submit feedback on the site.
 Form submission button | <img src="assets/screenshots/formsubmission.png" alt="Screen grab of the form submission button."> | - Used to submit feedback  
 Blank Entry Promt | <img src="assets/screenshots/promtforinfo.png" alt="Screenshot of the form promts."> | - The form also promts users to fill in any blanks before submission.
-
+Error 404 Page | <img src="assets/screenshots/error404.png" alt="Image of Error 404 page"> | - Page added to direct the user back to the Game.
 
 <!-- TOC --><a name="technology-used"></a>
 ## Technology Used 
@@ -247,13 +247,12 @@ Back to Game Button | Brings user to Home Page when clicked | Pass
 Bug | Image | Notes 
 --- | --- | ---
 CPU overwriting previous choices made by the user | <img src="assets/images/cpuoverwritebug.png" alt="image of cpu overwriting choices made Bug"> <img src="assets/images/cpubug.png" alt="Image of the CPU bug ovserved through watching HTML and Array designed to note moves made by user"> | - This was achieved through the introduction of a for loop that checks if the box is available to be selected by the Computer. <br> - I added an alert during the testing phase to notify me when the Computer was attempting to selected an unavilable box. <br> - Extensive testing was done through the use of DevTools as seen in the image I was able to watch the moves chosen by the user and CPU in the HTML and watch the moves chosen my the user in the console. <br> - I used resources such as Tutor Support, Slacks Peer Review Chanel, Stack Overflow to solve this issue. 
-
-Game Won Showing in Error. | <img src="assets/images/cpuwin.png" alt="Image of the win game error prior to fix"> | - This bug was observed when the game was won by either the User or Computer. <br> - It caused the Score to increment in error. <br> - It was fixed by adding a new function for the scenario when the User loses the game. <br> - This new function now decrements the score by 1 when the user loses a game.
+Game Won Showing in Error | <img src="assets/images/cpuwin.png" alt="Image of the win game error prior to fix"> | - This bug was observed when the game was won by either the User or Computer. <br> - It caused the Score to increment in error. <br> - It was fixed by adding a new function for the scenario when the User loses the game. <br> - This new function now decrements the score by 1 when the user loses a game.
 
 ### Unfixed Bugs: 
 Bug | Image | Notes 
 --- | --- | --- 
- |  |  - Given more time I would add another function to the JavaScript file to prevent the CPU from chosing any pre-selected box rather than just the one from the current turn.<br> - Extensive testing was done through the use of DevTools as seen in the image I was able to watch the moves chosen by the user and CPU in the HTML and watch the moves chosen my the user in the console. <br> - I used an alert for testing the site for the bug and noted when it was occuring. <br> - I used resources such as Tutor Support, Slacks Peer Review Chanel, Stack Overflow, and GeeksforGeeks for help with solving the issues I was having with this bug, however I was still unable to remove it completely. <br> I attempted to fix this bug logically through the use of functions and given more time I would use a .trim() function to remove the unavailale options from the game to prevent this bug impacting the users experience in the future.
+ Draw/End Game Bug | <img src="assets/images/gamewontend.png" alt="Draw Game error"> | - Given more time I would add another function to the JavaScript file to restart the game when no turns are available and when the game is over. <br> - Extensive testing was done through the use of DevTools to test different game scenarios <br> - I used an alert for testing the site for the bug and noted when it was occuring. <br> - I attempted to fix this bug logically through the use of functions and given more time I would use an if loop to determine game status and to initiate a restart when the game ends in a draw. 
 
 <!-- TOC --><a name="future-features"></a>
 ## Future Features:
