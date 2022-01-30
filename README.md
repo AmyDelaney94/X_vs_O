@@ -69,9 +69,9 @@ The main font used in the body of this site is EB Garamond with a back up font o
 
 Page View | Wireframe
 ---|---
-Desktop View | <img src="assets/screenshots/DesktopLayoutHome.png" alt="Desktop Wireframe">
-Mobile View <br> Game Area |<img src="assets/screenshots/GamePage.png" alt="Mobile wireframe of game area">
-Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLayout.png" alt="Mobile wireframe of home and feedback pages">
+Desktop View | <img src="assets/screenshots/desktoplayouthome.png" alt="Desktop Wireframe">
+Mobile View <br> Game Area |<img src="assets/screenshots/mobilegamepage.png" alt="Mobile wireframe of game area">
+Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/mobilelayout.png" alt="Mobile wireframe of home and feedback pages">
 
 
 <!-- TOC --><a name="features"></a>
@@ -84,23 +84,23 @@ Mobile View <br> Home and Feedback Pages |<img src="assets/screenshots/MobileLay
 <!-- TOC --><a name="header"></a>
 #### Header
 - The heading contaings the site name and is present on every game page.
-<img src="assets/screenshots/Heading.PNG" alt="Screenshot of Site heading">
+<img src="assets/screenshots/heading.png" alt="Screenshot of Site heading">
 
 <!-- TOC --><a name="page-features"></a>
 ###  Page Features
 
 Feature | Image | Notes   
 ---|---|---
-Home Page | <img src="assets/screenshots/HomePage.PNG" alt="Screenshot of home page"> | - Overview of homepage.
-Main Buttons | <img src="assets/screenshots/buttons.PNG" alt="Screenshot of Site heading"> | - The buttons on the home page direct the player to the game area, a rules pop-up, or a feedback form page.<br> - The Play button brings players to the Game Page. <br> - The Rules button activates a pop-up showing the rules and site controls. <br> - The Feedback button brings players to an accessible form to be able to submit their feedback.
-Rules Pop-up | <img src="assets/screenshots/RulesPopedUp.PNG" alt="Screenshot of Rules pop-up function as seen on live site"> | - The Rules pop-up explains the rules of the game to the player and has a visible close button. Alternatively the players can choose the play button directly to go from Rules to Game Play. 
-Game Area | <img src="assets/screenshots/gamePage.PNG" alt="Image of the game screen"> | - Game Area is comprised of a 3*3 grid and includes a player choice button and reset button. 
-Player Choice | <img src="assets/screenshots/choice.PNG" alt="Image of radio buttons for player choice"> | - Allows the player to chose X or O.
-Score Counter | <img src="assets/screenshots/Score.PNG" alt="Image of Score Counter"> | - Counts number of games Won against the computer.
-Reset Button | <img src="assets/screenshots/Reset.PNG" alt="Image of Reset Button"> | - Allows user to reset the game. 
-Feedback Form | <img src="assets/screenshots/Formonmobile.PNG" alt="Screen grab of the form on a mobile device."> | - The feedback form was added to allow users to submit feedback on the site.
-Form submission button | <img src="assets/screenshots/formsubmission.PNG" alt="Screen grab of the form submission button."> | - Used to submit feedback  
-Blank Entry Promt | <img src="assets/screenshots/promtforinfo.PNG" alt="Screenshot of the form promts."> | - The form also promts users to fill in any blanks before submission.
+Home Page | <img src="assets/screenshots/homepage.png" alt="Screenshot of home page"> | - Overview of homepage.
+Main Buttons | <img src="assets/screenshots/buttons.png" alt="Screenshot of Site heading"> | - The buttons on the home page direct the player to the game area, a rules pop-up, or a feedback form page.<br> - The Play button brings players to the Game Page. <br> - The Rules button activates a pop-up showing the rules and site controls. <br> - The Feedback button brings players to an accessible form to be able to submit their feedback.
+Rules Pop-up | <img src="assets/screenshots/rulespopedup.png" alt="Screenshot of Rules pop-up function as seen on live site"> | - The Rules pop-up explains the rules of the game to the player and has a visible close button. Alternatively the players can choose the play button directly to go from Rules to Game Play. 
+Game Area | <img src="assets/screenshots/gamepage.png" alt="Image of the game screen"> | - Game Area is comprised of a 3*3 grid and includes a player choice button and reset button. 
+Player Choice | <img src="assets/screenshots/choice.png" alt="Image of radio buttons for player choice"> | - Allows the player to chose X or O.
+Score Counter | <img src="assets/screenshots/score.png" alt="Image of Score Counter"> | - Counts number of games Won against the computer.
+Reset Button | <img src="assets/screenshots/reset.png" alt="Image of Reset Button"> | - Allows user to reset the game. 
+Feedback Form | <img src="assets/screenshots/formonmobile.png" alt="Screen grab of the form on a mobile device."> | - The feedback form was added to allow users to submit feedback on the site.
+Form submission button | <img src="assets/screenshots/formsubmission.png" alt="Screen grab of the form submission button."> | - Used to submit feedback  
+Blank Entry Promt | <img src="assets/screenshots/promtforinfo.png" alt="Screenshot of the form promts."> | - The form also promts users to fill in any blanks before submission.
 
 
 <!-- TOC --><a name="technology-used"></a>
