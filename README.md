@@ -141,7 +141,14 @@ Blank Entry Promt | <img src="assets/screenshots/promtforinfo.PNG" alt="Screensh
 ## Testing
 
 ### User Stories Testing
-
+- As a player, I want the website to be easy to navigate between pages.
+    - The buttons on the site allow easy navigation across the site. 
+    - The heading is also a link back to all the home page.
+- As a player, I want the rules to be easily accessable. 
+    - 
+- As a player, I want the game to be user friendly.
+- As a player, I want the game to work on multiple devices.
+- As a player, I want the game to be fun and engaging. 
 
 ### Manual Testing 
 * Browser Compatability
