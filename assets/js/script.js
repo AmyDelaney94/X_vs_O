@@ -114,7 +114,7 @@ function handleClick(e) {
 
     nextTurn();
 
-    if (gameWon(!playerOption)) {
+    if (gameWon(cpuSelect)) {
         notGameOver();
         chosenBoxes = [];
         return;
