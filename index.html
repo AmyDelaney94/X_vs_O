@@ -25,10 +25,10 @@
 
     <!-- Button to bring user to game screen, a rules pop up and feedback screen-->
     <section>
-        <button id="my-button" class="active" data-type="Play" onclick="window.location.href='play.html'"> Play <i
+        <button aria-label="Play" id="my-button" class="active" data-type="Play" onclick="window.location.href='play.html'"> Play <i
                 class="far fa-play-circle"></i></button>
-        <button id="open-rules-btn" class=" btn open-popup-btn" data-type="Rules">Rules!</button>
-        <button id="feedback-button" class="active" data-type="Feedback"
+        <button aria-label="Rules" id="open-rules-btn" class=" btn open-popup-btn" data-type="Rules">Rules!</button>
+        <button aria-label="Feedback" id="feedback-button" class="active" data-type="Feedback"
             onclick="window.location.href='feedback.html'">Feedback!</button>
     </section>
 
@@ -44,7 +44,7 @@
                 <li>Hit restart to clear and play again</li>
                 <li>Hit X's and O's to return to home page</li>
             </ol>
-            <button class="btn close-popup-btn" id="close-rules-btn" type="button" data-type="Close">Close</button>
+            <button aria-label="close" class="btn close-popup-btn" id="close-rules-btn" type="button" data-type="Close">Close</button>
         </div>
     </div>
 
